@@ -7,15 +7,12 @@ RobuHub is an iOS Application to list all public repositories from Github and it
 
 The `Domain` is basically what is RobuHub's App about and what it can do (Entities, UseCase etc.) **It does not depend on UIKit or any persistence framework**, and it doesn't have implementations apart from entities.
 
-Entities are implemented as Swift value types
+Entities are implemented as ObjectiveC types
 
 ```swift
-public struct Item {
-    public let id: Int
-    public let title: String
-    public let images: [String]
-    public let price: Double
-}
+@interface User: NSObject
+@property(nonatomic, assign) double myID;
+@end
 ```
 
 UseCases are protocols which do one specific thing:
