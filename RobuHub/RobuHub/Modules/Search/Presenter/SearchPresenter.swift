@@ -16,6 +16,7 @@ protocol SearchPresenter {
     func configure(cell: RepositoryCellView, forRow row: Int)
     func didSelect(row: Int)
     func search(for repositoryName: String)
+    func removeSearchItems()
 }
 
 class SearchPresenterImplementation: SearchPresenter {
@@ -26,10 +27,9 @@ class SearchPresenterImplementation: SearchPresenter {
     // Normally this would be file private as well, we keep it internal so we can inject values for testing purposes
     var repositories = [Repository]() {
         didSet {
+            view?.updateRepositoriesList()
             if repositories.isEmpty {
                 view?.showEmptyStatus()
-            } else {
-                view?.updateRepositoriesList()
             }
         }
     }
@@ -59,6 +59,10 @@ extension SearchPresenterImplementation {
         let repository = repositories[row]
         
         cell.display(repoName: repository.name, ownerName: repository.owner.login, ownerImageUrl: repository.owner.avatar_url, creationDate: "13:22 PM")
+    }
+    
+    func removeSearchItems() {
+        repositories.removeAll()
     }
     
     func search(for repositoryName: String) {

@@ -27,16 +27,17 @@ class SearchViewController: UIViewController {
     @IBOutlet private weak var repositoriesTableView: UITableView!
     @IBOutlet private weak var repositoriesSearchBar: UISearchBar!
     @IBOutlet private weak var emptyStatusLabel: UILabel!
-
+    
     // MARK: - Proprties
-
+    
     var presenter: SearchPresenter?
-
+    private let spinner = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 80, height:80))
+    
     // MARK: - View LifeCycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         updateViewTheme()
         setupRepositoriesTableView()
     }
@@ -46,7 +47,25 @@ class SearchViewController: UIViewController {
     private func setupRepositoriesTableView() {
         repositoriesTableView.register(UINib(nibName: "RepositoryCell", bundle: nil), forCellReuseIdentifier: "RepositoryCell")
     }
-
+    
+    private func showLoader() {
+        spinner.backgroundColor = UIColor.black.withAlphaComponent(0.5)
+        spinner.layer.cornerRadius = 8.0
+        spinner.clipsToBounds = true
+        spinner.hidesWhenStopped = true
+        spinner.style = UIActivityIndicatorView.Style.white;
+        spinner.center = view.center
+        view.addSubview(spinner)
+        spinner.startAnimating()
+        UIApplication.shared.beginIgnoringInteractionEvents()
+    }
+    
+    private func dismissLoader() {
+        spinner.stopAnimating()
+        spinner.removeFromSuperview()
+        UIApplication.shared.endIgnoringInteractionEvents()
+    }
+    
 }
 
 // MARK: - SearchView Protocol
@@ -68,11 +87,11 @@ extension SearchViewController: SearchView {
     }
     
     func showLoadingIndicator() {
-        
+        showLoader()
     }
     
     func hideLoadingIndicator() {
-        
+        dismissLoader()
     }
 }
 
@@ -116,5 +135,12 @@ extension SearchViewController: UISearchBarDelegate {
         
         searchBar.endEditing(true)
         presenter?.search(for: searchRepositoryName)
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText.isEmpty {
+            searchBar.endEditing(true)
+            presenter?.removeSearchItems()
+        }
     }
 }
