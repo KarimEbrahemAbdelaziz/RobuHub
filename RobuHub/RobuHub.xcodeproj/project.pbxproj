@@ -69,6 +69,9 @@
 		BCCE76AA254843E90058110A /* RepositoryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE76A9254843E90058110A /* RepositoryDetailsViewController.swift */; };
 		BCCE76AD254844F70058110A /* RepositoryDetailsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE76AC254844F70058110A /* RepositoryDetailsConfigurator.swift */; };
 		BCCE76B0254847170058110A /* RepositoryDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE76AF254847170058110A /* RepositoryDetailsPresenter.swift */; };
+		BCD4F9F925485E3F00D2DE03 /* RepositoriesUseCaseStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD4F9F825485E3F00D2DE03 /* RepositoriesUseCaseStub.swift */; };
+		BCD4F9FC25485E5500D2DE03 /* SearchViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD4F9FB25485E5500D2DE03 /* SearchViewSpy.swift */; };
+		BCD4F9FF25485E7100D2DE03 /* SearchPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD4F9FE25485E7100D2DE03 /* SearchPresenterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -207,6 +210,9 @@
 		BCCE76A9254843E90058110A /* RepositoryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailsViewController.swift; sourceTree = "<group>"; };
 		BCCE76AC254844F70058110A /* RepositoryDetailsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailsConfigurator.swift; sourceTree = "<group>"; };
 		BCCE76AF254847170058110A /* RepositoryDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailsPresenter.swift; sourceTree = "<group>"; };
+		BCD4F9F825485E3F00D2DE03 /* RepositoriesUseCaseStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesUseCaseStub.swift; sourceTree = "<group>"; };
+		BCD4F9FB25485E5500D2DE03 /* SearchViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewSpy.swift; sourceTree = "<group>"; };
+		BCD4F9FE25485E7100D2DE03 /* SearchPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -309,6 +315,9 @@
 		BCCE74CB2547CF2C0058110A /* RobuHubTests */ = {
 			isa = PBXGroup;
 			children = (
+				BCD4F9FD25485E6300D2DE03 /* Presenters */,
+				BCD4F9FA25485E4A00D2DE03 /* Spies */,
+				BCD4F9F725485E3000D2DE03 /* Stubs */,
 				BCCE74CC2547CF2C0058110A /* RobuHubTests.swift */,
 				BCCE74CE2547CF2C0058110A /* Info.plist */,
 			);
@@ -613,6 +622,30 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		BCD4F9F725485E3000D2DE03 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				BCD4F9F825485E3F00D2DE03 /* RepositoriesUseCaseStub.swift */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		BCD4F9FA25485E4A00D2DE03 /* Spies */ = {
+			isa = PBXGroup;
+			children = (
+				BCD4F9FB25485E5500D2DE03 /* SearchViewSpy.swift */,
+			);
+			path = Spies;
+			sourceTree = "<group>";
+		};
+		BCD4F9FD25485E6300D2DE03 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				BCD4F9FE25485E7100D2DE03 /* SearchPresenterTests.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -897,6 +930,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCCE74CD2547CF2C0058110A /* RobuHubTests.swift in Sources */,
+				BCD4F9FC25485E5500D2DE03 /* SearchViewSpy.swift in Sources */,
+				BCD4F9FF25485E7100D2DE03 /* SearchPresenterTests.swift in Sources */,
+				BCD4F9F925485E3F00D2DE03 /* RepositoriesUseCaseStub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
