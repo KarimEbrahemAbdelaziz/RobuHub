@@ -55,6 +55,11 @@
 		BCCE766C2547E3B60058110A /* RepositoriesUseCase.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCE766B2547E3B60058110A /* RepositoriesUseCase.m */; };
 		BCCE766E2547E3E50058110A /* UseCaseProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE766D2547E3E50058110A /* UseCaseProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BCCE76702547E3EF0058110A /* UseCaseProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCE766F2547E3EF0058110A /* UseCaseProvider.m */; };
+		BCCE7683254809E70058110A /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE7682254809E70058110A /* Route.swift */; };
+		BCCE768625480B270058110A /* ConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE768525480B270058110A /* ConfiguratorProtocol.swift */; };
+		BCCE768A25480D870058110A /* ViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE768925480D870058110A /* ViewProtocol.swift */; };
+		BCCE768C25480DB10058110A /* Themable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE768B25480DB10058110A /* Themable.swift */; };
+		BCCE7691254810480058110A /* UIImageView+ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE7690254810480058110A /* UIImageView+ImageDownloader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -179,6 +184,11 @@
 		BCCE766B2547E3B60058110A /* RepositoriesUseCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RepositoriesUseCase.m; sourceTree = "<group>"; };
 		BCCE766D2547E3E50058110A /* UseCaseProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UseCaseProvider.h; sourceTree = "<group>"; };
 		BCCE766F2547E3EF0058110A /* UseCaseProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UseCaseProvider.m; sourceTree = "<group>"; };
+		BCCE7682254809E70058110A /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		BCCE768525480B270058110A /* ConfiguratorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguratorProtocol.swift; sourceTree = "<group>"; };
+		BCCE768925480D870058110A /* ViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProtocol.swift; sourceTree = "<group>"; };
+		BCCE768B25480DB10058110A /* Themable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Themable.swift; sourceTree = "<group>"; };
+		BCCE7690254810480058110A /* UIImageView+ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+ImageDownloader.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,6 +271,7 @@
 		BCCE74B42547CF2A0058110A /* RobuHub */ = {
 			isa = PBXGroup;
 			children = (
+				BCCE7680254809CC0058110A /* Core */,
 				BCCE74B52547CF2A0058110A /* AppDelegate.swift */,
 				BCCE74B72547CF2A0058110A /* SceneDelegate.swift */,
 				BCCE74B92547CF2A0058110A /* ViewController.swift */,
@@ -409,6 +420,58 @@
 				BCCE766F2547E3EF0058110A /* UseCaseProvider.m */,
 			);
 			path = UseCases;
+			sourceTree = "<group>";
+		};
+		BCCE7680254809CC0058110A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				BCCE768F2548101E0058110A /* ImageDownloader */,
+				BCCE768725480D620058110A /* Themable */,
+				BCCE768825480D6A0058110A /* ViewProtocol */,
+				BCCE768425480AB70058110A /* ConfiguratorProtocol */,
+				BCCE7681254809D10058110A /* NavigationRoute */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		BCCE7681254809D10058110A /* NavigationRoute */ = {
+			isa = PBXGroup;
+			children = (
+				BCCE7682254809E70058110A /* Route.swift */,
+			);
+			path = NavigationRoute;
+			sourceTree = "<group>";
+		};
+		BCCE768425480AB70058110A /* ConfiguratorProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				BCCE768525480B270058110A /* ConfiguratorProtocol.swift */,
+			);
+			path = ConfiguratorProtocol;
+			sourceTree = "<group>";
+		};
+		BCCE768725480D620058110A /* Themable */ = {
+			isa = PBXGroup;
+			children = (
+				BCCE768B25480DB10058110A /* Themable.swift */,
+			);
+			path = Themable;
+			sourceTree = "<group>";
+		};
+		BCCE768825480D6A0058110A /* ViewProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				BCCE768925480D870058110A /* ViewProtocol.swift */,
+			);
+			path = ViewProtocol;
+			sourceTree = "<group>";
+		};
+		BCCE768F2548101E0058110A /* ImageDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				BCCE7690254810480058110A /* UIImageView+ImageDownloader.swift */,
+			);
+			path = ImageDownloader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -670,9 +733,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCCE768625480B270058110A /* ConfiguratorProtocol.swift in Sources */,
 				BCCE74BA2547CF2A0058110A /* ViewController.swift in Sources */,
+				BCCE7683254809E70058110A /* Route.swift in Sources */,
 				BCCE74B62547CF2A0058110A /* AppDelegate.swift in Sources */,
+				BCCE768A25480D870058110A /* ViewProtocol.swift in Sources */,
 				BCCE74B82547CF2A0058110A /* SceneDelegate.swift in Sources */,
+				BCCE768C25480DB10058110A /* Themable.swift in Sources */,
+				BCCE7691254810480058110A /* UIImageView+ImageDownloader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
