@@ -31,6 +31,8 @@ class SearchPresenterImplementation: SearchPresenter {
             view?.updateRepositoriesList()
             if repositories.isEmpty {
                 view?.showEmptyStatus()
+            } else {
+                view?.hideEmptyStatus()
             }
         }
     }
@@ -65,7 +67,8 @@ extension SearchPresenterImplementation {
     
     func configure(cell: RepositoryCellView, forRow row: Int) {
         let repository = repositories[row]
-        cell.display(repoName: repository.name, ownerName: repository.owner.login, ownerImageUrl: repository.owner.avatar_url, creationDate: "13:22 PM")
+        let createdAt = Date.convertFrom(dateString: repository.created_at) ?? "-"
+        cell.display(repoName: repository.name, ownerName: repository.owner.login, ownerImageUrl: repository.owner.avatar_url, creationDate: createdAt)
         checkForLastItem(at: row)
     }
     
@@ -74,12 +77,16 @@ extension SearchPresenterImplementation {
     }
     
     func search(for repositoryName: String) {
+        if repositoryName != searchQueryName {
+            currentPageNumber = 1
+            self.repositories.removeAll()
+        }
         searchQueryName = repositoryName
         view?.hideEmptyStatus()
         view?.showLoadingIndicator()
         searchRepositoriesUseCase.fetchRepositories(repositoryName, page: Int32(currentPageNumber), countPerPage: defaultCountPerPage) { [weak self] repositories in
             self?.view?.hideLoadingIndicator()
-            guard let repos = repositories as? [Repository] else {
+            guard let repos = repositories as? [Repository], !repos.isEmpty else {
                 return
             }
             
@@ -93,7 +100,6 @@ extension SearchPresenterImplementation {
     }
     
     func didSelect(row: Int) {
-        print("Selected Row: \(row)")
         let repoDetailsRoute = SearchRoute.repositoryDetails(repository: repositories[row])
         view?.navigateTo(repoDetailsRoute)
     }
