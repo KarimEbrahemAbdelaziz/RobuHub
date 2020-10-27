@@ -40,6 +40,8 @@
 		BCCE75B92547D7AD0058110A /* JSONAPIResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCE75B82547D7AD0058110A /* JSONAPIResponse.m */; };
 		BCCE75C52547D9610058110A /* APIRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE75C42547D9610058110A /* APIRequest.h */; };
 		BCCE76162547DD6F0058110A /* APIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCE76152547DD6F0058110A /* APIRequest.m */; };
+		BCCE76222547DDAF0058110A /* APIClient.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE76212547DDAF0058110A /* APIClient.h */; };
+		BCCE76292547DDB80058110A /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCE76282547DDB80058110A /* APIClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,6 +145,8 @@
 		BCCE75B82547D7AD0058110A /* JSONAPIResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSONAPIResponse.m; sourceTree = "<group>"; };
 		BCCE75C42547D9610058110A /* APIRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIRequest.h; sourceTree = "<group>"; };
 		BCCE76152547DD6F0058110A /* APIRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIRequest.m; sourceTree = "<group>"; };
+		BCCE76212547DDAF0058110A /* APIClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIClient.h; sourceTree = "<group>"; };
+		BCCE76282547DDB80058110A /* APIClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIClient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -321,6 +325,8 @@
 				BCCE75852547D6E80058110A /* APIResponse.h */,
 				BCCE75C42547D9610058110A /* APIRequest.h */,
 				BCCE76152547DD6F0058110A /* APIRequest.m */,
+				BCCE76212547DDAF0058110A /* APIClient.h */,
+				BCCE76282547DDB80058110A /* APIClient.m */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -360,6 +366,7 @@
 				BCCE75C52547D9610058110A /* APIRequest.h in Headers */,
 				BCCE755E2547D4F40058110A /* NetworkPlatform.h in Headers */,
 				BCCE75862547D6E80058110A /* APIResponse.h in Headers */,
+				BCCE76222547DDAF0058110A /* APIClient.h in Headers */,
 				BCCE75722547D61A0058110A /* HTTPMethod.h in Headers */,
 				BCCE759F2547D7490058110A /* JSONAPIResponse.h in Headers */,
 			);
@@ -623,6 +630,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCCE76292547DDB80058110A /* APIClient.m in Sources */,
 				BCCE75AD2547D7920058110A /* SimpleAPIResponse.m in Sources */,
 				BCCE757E2547D6270058110A /* HTTPMethod.m in Sources */,
 				BCCE76162547DD6F0058110A /* APIRequest.m in Sources */,
