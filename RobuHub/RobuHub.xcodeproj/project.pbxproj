@@ -59,6 +59,7 @@
 		BCCE768625480B270058110A /* ConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE768525480B270058110A /* ConfiguratorProtocol.swift */; };
 		BCCE768A25480D870058110A /* ViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE768925480D870058110A /* ViewProtocol.swift */; };
 		BCCE768C25480DB10058110A /* Themable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE768B25480DB10058110A /* Themable.swift */; };
+		BCCE7691254810480058110A /* UIImageView+ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE7690254810480058110A /* UIImageView+ImageDownloader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -187,6 +188,7 @@
 		BCCE768525480B270058110A /* ConfiguratorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguratorProtocol.swift; sourceTree = "<group>"; };
 		BCCE768925480D870058110A /* ViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProtocol.swift; sourceTree = "<group>"; };
 		BCCE768B25480DB10058110A /* Themable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Themable.swift; sourceTree = "<group>"; };
+		BCCE7690254810480058110A /* UIImageView+ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+ImageDownloader.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -423,6 +425,7 @@
 		BCCE7680254809CC0058110A /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				BCCE768F2548101E0058110A /* ImageDownloader */,
 				BCCE768725480D620058110A /* Themable */,
 				BCCE768825480D6A0058110A /* ViewProtocol */,
 				BCCE768425480AB70058110A /* ConfiguratorProtocol */,
@@ -461,6 +464,14 @@
 				BCCE768925480D870058110A /* ViewProtocol.swift */,
 			);
 			path = ViewProtocol;
+			sourceTree = "<group>";
+		};
+		BCCE768F2548101E0058110A /* ImageDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				BCCE7690254810480058110A /* UIImageView+ImageDownloader.swift */,
+			);
+			path = ImageDownloader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -729,6 +740,7 @@
 				BCCE768A25480D870058110A /* ViewProtocol.swift in Sources */,
 				BCCE74B82547CF2A0058110A /* SceneDelegate.swift in Sources */,
 				BCCE768C25480DB10058110A /* Themable.swift in Sources */,
+				BCCE7691254810480058110A /* UIImageView+ImageDownloader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
