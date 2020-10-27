@@ -33,6 +33,11 @@
 		BCCE75622547D4F40058110A /* NetworkPlatform.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BCCE754C2547D4F30058110A /* NetworkPlatform.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BCCE75722547D61A0058110A /* HTTPMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE75712547D61A0058110A /* HTTPMethod.h */; };
 		BCCE757E2547D6270058110A /* HTTPMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCE757D2547D6270058110A /* HTTPMethod.m */; };
+		BCCE75862547D6E80058110A /* APIResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE75852547D6E80058110A /* APIResponse.h */; };
+		BCCE75932547D71E0058110A /* SimpleAPIResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE75922547D71D0058110A /* SimpleAPIResponse.h */; };
+		BCCE759F2547D7490058110A /* JSONAPIResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE759E2547D7490058110A /* JSONAPIResponse.h */; };
+		BCCE75AD2547D7920058110A /* SimpleAPIResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCE75AC2547D7920058110A /* SimpleAPIResponse.m */; };
+		BCCE75B92547D7AD0058110A /* JSONAPIResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCE75B82547D7AD0058110A /* JSONAPIResponse.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +134,11 @@
 		BCCE755D2547D4F40058110A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCCE75712547D61A0058110A /* HTTPMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPMethod.h; sourceTree = "<group>"; };
 		BCCE757D2547D6270058110A /* HTTPMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTPMethod.m; sourceTree = "<group>"; };
+		BCCE75852547D6E80058110A /* APIResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIResponse.h; sourceTree = "<group>"; };
+		BCCE75922547D71D0058110A /* SimpleAPIResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleAPIResponse.h; sourceTree = "<group>"; };
+		BCCE759E2547D7490058110A /* JSONAPIResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONAPIResponse.h; sourceTree = "<group>"; };
+		BCCE75AC2547D7920058110A /* SimpleAPIResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleAPIResponse.m; sourceTree = "<group>"; };
+		BCCE75B82547D7AD0058110A /* JSONAPIResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSONAPIResponse.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -301,10 +311,23 @@
 		BCCE756E2547D5040058110A /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				BCCE75912547D70C0058110A /* Responses */,
 				BCCE75712547D61A0058110A /* HTTPMethod.h */,
 				BCCE757D2547D6270058110A /* HTTPMethod.m */,
+				BCCE75852547D6E80058110A /* APIResponse.h */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		BCCE75912547D70C0058110A /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				BCCE75922547D71D0058110A /* SimpleAPIResponse.h */,
+				BCCE75AC2547D7920058110A /* SimpleAPIResponse.m */,
+				BCCE759E2547D7490058110A /* JSONAPIResponse.h */,
+				BCCE75B82547D7AD0058110A /* JSONAPIResponse.m */,
+			);
+			path = Responses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,8 +350,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCCE75932547D71E0058110A /* SimpleAPIResponse.h in Headers */,
 				BCCE755E2547D4F40058110A /* NetworkPlatform.h in Headers */,
+				BCCE75862547D6E80058110A /* APIResponse.h in Headers */,
 				BCCE75722547D61A0058110A /* HTTPMethod.h in Headers */,
+				BCCE759F2547D7490058110A /* JSONAPIResponse.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,7 +616,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCCE75AD2547D7920058110A /* SimpleAPIResponse.m in Sources */,
 				BCCE757E2547D6270058110A /* HTTPMethod.m in Sources */,
+				BCCE75B92547D7AD0058110A /* JSONAPIResponse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
