@@ -15,7 +15,8 @@ enum SearchConfigurator: ConfiguratorProtocol {
     var viewController: UIViewController {
         switch self {
         case .searchViewController:
-            let searchViewController = SearchViewController()
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let searchViewController = storyboard.instantiateViewController(identifier: "SearchViewController") as! SearchViewController
             let searchRepositoriesUseCase = UseCaseProvider().makeRepositoriesUseCase()
             let presenter = SearchPresenterImplementation(
                 view: searchViewController,
