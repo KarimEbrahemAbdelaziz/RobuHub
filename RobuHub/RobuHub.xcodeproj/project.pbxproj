@@ -18,14 +18,14 @@
 		BCCE74F12547D1090058110A /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE74EF2547D1090058110A /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BCCE74F42547D1090058110A /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCCE74ED2547D1090058110A /* Domain.framework */; };
 		BCCE74F52547D1090058110A /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BCCE74ED2547D1090058110A /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		BCCE750B2547D1F70058110A /* NSObject+JSONSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE750A2547D1F70058110A /* NSObject+JSONSerialization.h */; };
+		BCCE750B2547D1F70058110A /* NSObject+JSONSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE750A2547D1F70058110A /* NSObject+JSONSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BCCE75132547D2630058110A /* NSObject+JSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCE75122547D2630058110A /* NSObject+JSONSerialization.m */; };
-		BCCE75192547D2C00058110A /* User.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE75182547D2C00058110A /* User.h */; };
+		BCCE75192547D2C00058110A /* User.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE75182547D2C00058110A /* User.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BCCE75222547D2E70058110A /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCE75212547D2E70058110A /* User.m */; };
-		BCCE752A2547D3290058110A /* Repository.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE75292547D3290058110A /* Repository.h */; };
+		BCCE752A2547D3290058110A /* Repository.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE75292547D3290058110A /* Repository.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BCCE752F2547D33F0058110A /* Repository.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCE752E2547D33F0058110A /* Repository.m */; };
-		BCCE75352547D3840058110A /* RepositoriesUseCase.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE75342547D3840058110A /* RepositoriesUseCase.h */; };
-		BCCE753D2547D3D60058110A /* UseCaseProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE753C2547D3D60058110A /* UseCaseProvider.h */; };
+		BCCE75352547D3840058110A /* RepositoriesUseCase.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE75342547D3840058110A /* RepositoriesUseCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BCCE753D2547D3D60058110A /* UseCaseProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE753C2547D3D60058110A /* UseCaseProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BCCE75552547D4F40058110A /* NetworkPlatform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCCE754C2547D4F30058110A /* NetworkPlatform.framework */; };
 		BCCE755C2547D4F40058110A /* NetworkPlatformTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCE755B2547D4F40058110A /* NetworkPlatformTests.m */; };
 		BCCE755E2547D4F40058110A /* NetworkPlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE754E2547D4F30058110A /* NetworkPlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -43,6 +43,8 @@
 		BCCE76222547DDAF0058110A /* APIClient.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE76212547DDAF0058110A /* APIClient.h */; };
 		BCCE76292547DDB80058110A /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCE76282547DDB80058110A /* APIClient.m */; };
 		BCCE76442547DE650058110A /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCCE74ED2547D1090058110A /* Domain.framework */; };
+		BCCE76592547DF0B0058110A /* RepositoriesResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE76582547DF0B0058110A /* RepositoriesResponse.h */; };
+		BCCE765B2547DF130058110A /* RepositoriesResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCE765A2547DF130058110A /* RepositoriesResponse.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,6 +157,8 @@
 		BCCE76152547DD6F0058110A /* APIRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIRequest.m; sourceTree = "<group>"; };
 		BCCE76212547DDAF0058110A /* APIClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIClient.h; sourceTree = "<group>"; };
 		BCCE76282547DDB80058110A /* APIClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIClient.m; sourceTree = "<group>"; };
+		BCCE76582547DF0B0058110A /* RepositoriesResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RepositoriesResponse.h; sourceTree = "<group>"; };
+		BCCE765A2547DF130058110A /* RepositoriesResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RepositoriesResponse.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -356,6 +360,8 @@
 		BCCE762F2547DDF20058110A /* API */ = {
 			isa = PBXGroup;
 			children = (
+				BCCE76582547DF0B0058110A /* RepositoriesResponse.h */,
+				BCCE765A2547DF130058110A /* RepositoriesResponse.m */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -390,6 +396,7 @@
 				BCCE75932547D71E0058110A /* SimpleAPIResponse.h in Headers */,
 				BCCE75C52547D9610058110A /* APIRequest.h in Headers */,
 				BCCE755E2547D4F40058110A /* NetworkPlatform.h in Headers */,
+				BCCE76592547DF0B0058110A /* RepositoriesResponse.h in Headers */,
 				BCCE75862547D6E80058110A /* APIResponse.h in Headers */,
 				BCCE76222547DDAF0058110A /* APIClient.h in Headers */,
 				BCCE75722547D61A0058110A /* HTTPMethod.h in Headers */,
@@ -658,6 +665,7 @@
 			files = (
 				BCCE76292547DDB80058110A /* APIClient.m in Sources */,
 				BCCE75AD2547D7920058110A /* SimpleAPIResponse.m in Sources */,
+				BCCE765B2547DF130058110A /* RepositoriesResponse.m in Sources */,
 				BCCE757E2547D6270058110A /* HTTPMethod.m in Sources */,
 				BCCE76162547DD6F0058110A /* APIRequest.m in Sources */,
 				BCCE75B92547D7AD0058110A /* JSONAPIResponse.m in Sources */,
