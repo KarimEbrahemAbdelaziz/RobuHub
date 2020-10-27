@@ -61,6 +61,9 @@
 		BCCE768C25480DB10058110A /* Themable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE768B25480DB10058110A /* Themable.swift */; };
 		BCCE7691254810480058110A /* UIImageView+ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE7690254810480058110A /* UIImageView+ImageDownloader.swift */; };
 		BCCE769B254816580058110A /* SearchRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE769A254816580058110A /* SearchRoute.swift */; };
+		BCCE769D254817730058110A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE769C254817730058110A /* SearchViewController.swift */; };
+		BCCE769F254818590058110A /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE769E254818590058110A /* SearchPresenter.swift */; };
+		BCCE76A12548191A0058110A /* SearchConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE76A02548191A0058110A /* SearchConfigurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -191,6 +194,9 @@
 		BCCE768B25480DB10058110A /* Themable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Themable.swift; sourceTree = "<group>"; };
 		BCCE7690254810480058110A /* UIImageView+ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+ImageDownloader.swift"; sourceTree = "<group>"; };
 		BCCE769A254816580058110A /* SearchRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRoute.swift; sourceTree = "<group>"; };
+		BCCE769C254817730058110A /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		BCCE769E254818590058110A /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
+		BCCE76A02548191A0058110A /* SearchConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -515,6 +521,7 @@
 		BCCE76962548162B0058110A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BCCE769C254817730058110A /* SearchViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -522,6 +529,7 @@
 		BCCE7697254816300058110A /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				BCCE769E254818590058110A /* SearchPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -529,6 +537,7 @@
 		BCCE7698254816350058110A /* Configurator */ = {
 			isa = PBXGroup;
 			children = (
+				BCCE76A02548191A0058110A /* SearchConfigurator.swift */,
 			);
 			path = Configurator;
 			sourceTree = "<group>";
@@ -800,6 +809,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCCE76A12548191A0058110A /* SearchConfigurator.swift in Sources */,
+				BCCE769F254818590058110A /* SearchPresenter.swift in Sources */,
+				BCCE769D254817730058110A /* SearchViewController.swift in Sources */,
 				BCCE768625480B270058110A /* ConfiguratorProtocol.swift in Sources */,
 				BCCE74BA2547CF2A0058110A /* ViewController.swift in Sources */,
 				BCCE7683254809E70058110A /* Route.swift in Sources */,
