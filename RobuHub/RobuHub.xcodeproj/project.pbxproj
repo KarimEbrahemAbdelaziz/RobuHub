@@ -22,6 +22,8 @@
 		BCCE75132547D2630058110A /* NSObject+JSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCE75122547D2630058110A /* NSObject+JSONSerialization.m */; };
 		BCCE75192547D2C00058110A /* User.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE75182547D2C00058110A /* User.h */; };
 		BCCE75222547D2E70058110A /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCE75212547D2E70058110A /* User.m */; };
+		BCCE752A2547D3290058110A /* Repository.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE75292547D3290058110A /* Repository.h */; };
+		BCCE752F2547D33F0058110A /* Repository.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCE752E2547D33F0058110A /* Repository.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +86,8 @@
 		BCCE75122547D2630058110A /* NSObject+JSONSerialization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JSONSerialization.m"; sourceTree = "<group>"; };
 		BCCE75182547D2C00058110A /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		BCCE75212547D2E70058110A /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		BCCE75292547D3290058110A /* Repository.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Repository.h; sourceTree = "<group>"; };
+		BCCE752E2547D33F0058110A /* Repository.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Repository.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +202,8 @@
 			children = (
 				BCCE75182547D2C00058110A /* User.h */,
 				BCCE75212547D2E70058110A /* User.m */,
+				BCCE75292547D3290058110A /* Repository.h */,
+				BCCE752E2547D33F0058110A /* Repository.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -211,6 +217,7 @@
 			files = (
 				BCCE74F12547D1090058110A /* Domain.h in Headers */,
 				BCCE75192547D2C00058110A /* User.h in Headers */,
+				BCCE752A2547D3290058110A /* Repository.h in Headers */,
 				BCCE750B2547D1F70058110A /* NSObject+JSONSerialization.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,6 +410,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCCE75222547D2E70058110A /* User.m in Sources */,
+				BCCE752F2547D33F0058110A /* Repository.m in Sources */,
 				BCCE75132547D2630058110A /* NSObject+JSONSerialization.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
