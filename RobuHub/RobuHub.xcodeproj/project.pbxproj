@@ -25,6 +25,7 @@
 		BCCE752A2547D3290058110A /* Repository.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE75292547D3290058110A /* Repository.h */; };
 		BCCE752F2547D33F0058110A /* Repository.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCE752E2547D33F0058110A /* Repository.m */; };
 		BCCE75352547D3840058110A /* RepositoriesUseCase.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE75342547D3840058110A /* RepositoriesUseCase.h */; };
+		BCCE753D2547D3D60058110A /* UseCaseProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE753C2547D3D60058110A /* UseCaseProvider.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,7 @@
 		BCCE75292547D3290058110A /* Repository.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Repository.h; sourceTree = "<group>"; };
 		BCCE752E2547D33F0058110A /* Repository.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Repository.m; sourceTree = "<group>"; };
 		BCCE75342547D3840058110A /* RepositoriesUseCase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RepositoriesUseCase.h; sourceTree = "<group>"; };
+		BCCE753C2547D3D60058110A /* UseCaseProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UseCaseProvider.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				BCCE75342547D3840058110A /* RepositoriesUseCase.h */,
+				BCCE753C2547D3D60058110A /* UseCaseProvider.h */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCCE75352547D3840058110A /* RepositoriesUseCase.h in Headers */,
+				BCCE753D2547D3D60058110A /* UseCaseProvider.h in Headers */,
 				BCCE74F12547D1090058110A /* Domain.h in Headers */,
 				BCCE75192547D2C00058110A /* User.h in Headers */,
 				BCCE752A2547D3290058110A /* Repository.h in Headers */,
