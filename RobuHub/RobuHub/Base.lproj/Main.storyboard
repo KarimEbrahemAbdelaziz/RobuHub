@@ -15,13 +15,47 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="NQK-bj-4S6">
+                                <rect key="frame" x="16" y="112" width="382" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repositories" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPv-7a-xM2">
+                                <rect key="frame" x="24" y="60" width="366" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search for a repository o Github 🛠" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T6I-Gr-pjB">
+                                <rect key="frame" x="24" y="439.5" width="366" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.37254901959999998" green="0.37254901959999998" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NQK-bj-4S6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="BYx-L4-UMI"/>
+                            <constraint firstItem="NQK-bj-4S6" firstAttribute="top" secondItem="lPv-7a-xM2" secondAttribute="bottom" constant="16" id="QdD-SJ-QSO"/>
+                            <constraint firstItem="lPv-7a-xM2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="WAx-hH-LtV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lPv-7a-xM2" secondAttribute="trailing" constant="24" id="dVE-q9-Qtu"/>
+                            <constraint firstItem="T6I-Gr-pjB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ixf-wU-Rjq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NQK-bj-4S6" secondAttribute="trailing" constant="16" id="kdJ-gW-EIX"/>
+                            <constraint firstItem="T6I-Gr-pjB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="r6A-ca-TwE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="T6I-Gr-pjB" secondAttribute="trailing" constant="24" id="sPv-1N-vYC"/>
+                            <constraint firstItem="lPv-7a-xM2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="sTe-7Q-Q1g"/>
+                            <constraint firstItem="T6I-Gr-pjB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="vah-zO-ziL"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emptyStatusLabel" destination="T6I-Gr-pjB" id="68Z-ZX-lpD"/>
+                        <outlet property="repositoriesSearchBar" destination="NQK-bj-4S6" id="iMh-Ya-Muu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="122" y="52"/>
+            <point key="canvasLocation" x="121.73913043478262" y="51.5625"/>
         </scene>
     </scenes>
     <resources>

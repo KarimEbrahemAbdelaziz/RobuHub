@@ -16,6 +16,11 @@ protocol SearchView: ViewProtocol {
 // MARK: - Search ViewController
 
 class SearchViewController: UIViewController {
+    
+    // MARK: - IBOutlets
+    
+    @IBOutlet private weak var repositoriesSearchBar: UISearchBar!
+    @IBOutlet private weak var emptyStatusLabel: UILabel!
 
     // MARK: - Proprties
 
