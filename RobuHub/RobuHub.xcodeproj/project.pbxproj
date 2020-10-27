@@ -64,6 +64,8 @@
 		BCCE769D254817730058110A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE769C254817730058110A /* SearchViewController.swift */; };
 		BCCE769F254818590058110A /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE769E254818590058110A /* SearchPresenter.swift */; };
 		BCCE76A12548191A0058110A /* SearchConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE76A02548191A0058110A /* SearchConfigurator.swift */; };
+		BCCE76A525482C3F0058110A /* RepositoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE76A325482C3F0058110A /* RepositoryCell.swift */; };
+		BCCE76A625482C3F0058110A /* RepositoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCCE76A425482C3F0058110A /* RepositoryCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -197,6 +199,8 @@
 		BCCE769C254817730058110A /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		BCCE769E254818590058110A /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
 		BCCE76A02548191A0058110A /* SearchConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchConfigurator.swift; sourceTree = "<group>"; };
+		BCCE76A325482C3F0058110A /* RepositoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryCell.swift; sourceTree = "<group>"; };
+		BCCE76A425482C3F0058110A /* RepositoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoryCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -521,6 +525,7 @@
 		BCCE76962548162B0058110A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BCCE76A225482C100058110A /* RepositoryCell */,
 				BCCE769C254817730058110A /* SearchViewController.swift */,
 			);
 			path = View;
@@ -548,6 +553,15 @@
 				BCCE769A254816580058110A /* SearchRoute.swift */,
 			);
 			path = Route;
+			sourceTree = "<group>";
+		};
+		BCCE76A225482C100058110A /* RepositoryCell */ = {
+			isa = PBXGroup;
+			children = (
+				BCCE76A325482C3F0058110A /* RepositoryCell.swift */,
+				BCCE76A425482C3F0058110A /* RepositoryCell.xib */,
+			);
+			path = RepositoryCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -764,6 +778,7 @@
 				BCCE74C22547CF2C0058110A /* LaunchScreen.storyboard in Resources */,
 				BCCE74BF2547CF2C0058110A /* Assets.xcassets in Resources */,
 				BCCE74BD2547CF2A0058110A /* Main.storyboard in Resources */,
+				BCCE76A625482C3F0058110A /* RepositoryCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -817,6 +832,7 @@
 				BCCE7683254809E70058110A /* Route.swift in Sources */,
 				BCCE769B254816580058110A /* SearchRoute.swift in Sources */,
 				BCCE74B62547CF2A0058110A /* AppDelegate.swift in Sources */,
+				BCCE76A525482C3F0058110A /* RepositoryCell.swift in Sources */,
 				BCCE768A25480D870058110A /* ViewProtocol.swift in Sources */,
 				BCCE74B82547CF2A0058110A /* SceneDelegate.swift in Sources */,
 				BCCE768C25480DB10058110A /* Themable.swift in Sources */,

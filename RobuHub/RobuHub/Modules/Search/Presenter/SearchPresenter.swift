@@ -10,7 +10,11 @@ import Domain
 import NetworkPlatform
 
 protocol SearchPresenter {
-    func search(for repository: String, at pageNumber: Int, countPerPage: Int)
+    var numberOfRepositories: Int { get }
+    
+    func viewDidLoad()
+    func didSelect(row: Int)
+    func search(for repositoryName: String)
 }
 
 class SearchPresenterImplementation: SearchPresenter {
@@ -19,23 +23,52 @@ class SearchPresenterImplementation: SearchPresenter {
     fileprivate let searchRepositoriesUseCase: RepositoriesUseCase
     
     // Normally this would be file private as well, we keep it internal so we can inject values for testing purposes
-    var repositories = [Repository]()
+    var repositories = [Repository]() {
+        didSet {
+            if repositories.isEmpty {
+                view?.showEmptyStatus()
+            } else {
+                view?.updateRepositoriesList()
+            }
+        }
+    }
+    private let currentPageNumber: Int32 = 1
+    private let defaultCountPerPage: Int32 = 10
     
     init(view: SearchView,
          searchRepositoriesUseCase: RepositoriesUseCase) {
         self.view = view
         self.searchRepositoriesUseCase = searchRepositoriesUseCase
     }
+    
+    // MARK: - Functions
+    
+    var numberOfRepositories: Int {
+        return repositories.count
+    }
 
 }
 
 extension SearchPresenterImplementation {
-    func search(for repository: String, at pageNumber: Int, countPerPage: Int) {
-        searchRepositoriesUseCase.fetchRepositories(repository, page: 1, countPerPage: Int32(countPerPage)) { repositories in
+    func viewDidLoad() {
+        view?.showEmptyStatus()
+    }
+    
+    func search(for repositoryName: String) {
+        view?.hideEmptyStatus()
+        view?.showLoadingIndicator()
+        searchRepositoriesUseCase.fetchRepositories(repositoryName, page: currentPageNumber, countPerPage: defaultCountPerPage) { [weak self] repositories in
+            self?.view?.hideLoadingIndicator()
             guard let repos = repositories as? [Repository] else {
                 print("Can't parse.")
                 return
             }
+            
+            self?.repositories = repos
         }
+    }
+    
+    func didSelect(row: Int) {
+        print("Selected Row: \(row)")
     }
 }

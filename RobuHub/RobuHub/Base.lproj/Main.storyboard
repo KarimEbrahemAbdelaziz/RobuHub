@@ -32,12 +32,19 @@
                                 <color key="textColor" red="0.37254901959999998" green="0.37254901959999998" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6vk-YH-8Ti">
+                                <rect key="frame" x="16" y="184" width="382" height="662"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6vk-YH-8Ti" secondAttribute="trailing" constant="16" id="4zp-vj-Lds"/>
                             <constraint firstItem="NQK-bj-4S6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="BYx-L4-UMI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6vk-YH-8Ti" secondAttribute="bottom" constant="16" id="Czx-Q3-jDi"/>
                             <constraint firstItem="NQK-bj-4S6" firstAttribute="top" secondItem="lPv-7a-xM2" secondAttribute="bottom" constant="16" id="QdD-SJ-QSO"/>
+                            <constraint firstItem="6vk-YH-8Ti" firstAttribute="top" secondItem="NQK-bj-4S6" secondAttribute="bottom" constant="16" id="Sl9-4L-QQE"/>
                             <constraint firstItem="lPv-7a-xM2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="WAx-hH-LtV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lPv-7a-xM2" secondAttribute="trailing" constant="24" id="dVE-q9-Qtu"/>
                             <constraint firstItem="T6I-Gr-pjB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ixf-wU-Rjq"/>
@@ -46,6 +53,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="T6I-Gr-pjB" secondAttribute="trailing" constant="24" id="sPv-1N-vYC"/>
                             <constraint firstItem="lPv-7a-xM2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="sTe-7Q-Q1g"/>
                             <constraint firstItem="T6I-Gr-pjB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="vah-zO-ziL"/>
+                            <constraint firstItem="6vk-YH-8Ti" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="vvv-oz-l8f"/>
                         </constraints>
                     </view>
                     <connections>
