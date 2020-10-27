@@ -18,6 +18,7 @@
 		BCCE74F12547D1090058110A /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE74EF2547D1090058110A /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BCCE74F42547D1090058110A /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCCE74ED2547D1090058110A /* Domain.framework */; };
 		BCCE74F52547D1090058110A /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BCCE74ED2547D1090058110A /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BCCE750B2547D1F70058110A /* NSObject+JSONSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE750A2547D1F70058110A /* NSObject+JSONSerialization.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		BCCE74ED2547D1090058110A /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCCE74EF2547D1090058110A /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
 		BCCE74F02547D1090058110A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCCE750A2547D1F70058110A /* NSObject+JSONSerialization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSONSerialization.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,10 +170,19 @@
 		BCCE74EE2547D1090058110A /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				BCCE75092547D1E50058110A /* Mapping */,
 				BCCE74EF2547D1090058110A /* Domain.h */,
 				BCCE74F02547D1090058110A /* Info.plist */,
 			);
 			path = Domain;
+			sourceTree = "<group>";
+		};
+		BCCE75092547D1E50058110A /* Mapping */ = {
+			isa = PBXGroup;
+			children = (
+				BCCE750A2547D1F70058110A /* NSObject+JSONSerialization.h */,
+			);
+			path = Mapping;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCCE74F12547D1090058110A /* Domain.h in Headers */,
+				BCCE750B2547D1F70058110A /* NSObject+JSONSerialization.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
