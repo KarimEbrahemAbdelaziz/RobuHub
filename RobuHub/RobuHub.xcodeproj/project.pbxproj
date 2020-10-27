@@ -42,6 +42,7 @@
 		BCCE76162547DD6F0058110A /* APIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCE76152547DD6F0058110A /* APIRequest.m */; };
 		BCCE76222547DDAF0058110A /* APIClient.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE76212547DDAF0058110A /* APIClient.h */; };
 		BCCE76292547DDB80058110A /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCE76282547DDB80058110A /* APIClient.m */; };
+		BCCE76442547DE650058110A /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCCE74ED2547D1090058110A /* Domain.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = BCCE754B2547D4F30058110A;
 			remoteInfo = NetworkPlatform;
+		};
+		BCCE76462547DE650058110A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCCE74AA2547CF2A0058110A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCCE74EC2547D1090058110A;
+			remoteInfo = Domain;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -184,6 +192,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCCE76442547DE650058110A /* Domain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +217,7 @@
 				BCCE754D2547D4F30058110A /* NetworkPlatform */,
 				BCCE755A2547D4F40058110A /* NetworkPlatformTests */,
 				BCCE74B32547CF2A0058110A /* Products */,
+				BCCE76432547DE650058110A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -300,6 +310,7 @@
 		BCCE754D2547D4F30058110A /* NetworkPlatform */ = {
 			isa = PBXGroup;
 			children = (
+				BCCE762F2547DDF20058110A /* API */,
 				BCCE756E2547D5040058110A /* Networking */,
 				BCCE754E2547D4F30058110A /* NetworkPlatform.h */,
 				BCCE754F2547D4F30058110A /* Info.plist */,
@@ -340,6 +351,20 @@
 				BCCE75B82547D7AD0058110A /* JSONAPIResponse.m */,
 			);
 			path = Responses;
+			sourceTree = "<group>";
+		};
+		BCCE762F2547DDF20058110A /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		BCCE76432547DE650058110A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -461,6 +486,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				BCCE76472547DE650058110A /* PBXTargetDependency */,
 			);
 			name = NetworkPlatform;
 			productName = NetworkPlatform;
@@ -678,6 +704,11 @@
 			isa = PBXTargetDependency;
 			target = BCCE754B2547D4F30058110A /* NetworkPlatform */;
 			targetProxy = BCCE755F2547D4F40058110A /* PBXContainerItemProxy */;
+		};
+		BCCE76472547DE650058110A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCCE74EC2547D1090058110A /* Domain */;
+			targetProxy = BCCE76462547DE650058110A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
