@@ -38,6 +38,8 @@
 		BCCE759F2547D7490058110A /* JSONAPIResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE759E2547D7490058110A /* JSONAPIResponse.h */; };
 		BCCE75AD2547D7920058110A /* SimpleAPIResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCE75AC2547D7920058110A /* SimpleAPIResponse.m */; };
 		BCCE75B92547D7AD0058110A /* JSONAPIResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCE75B82547D7AD0058110A /* JSONAPIResponse.m */; };
+		BCCE75C52547D9610058110A /* APIRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE75C42547D9610058110A /* APIRequest.h */; };
+		BCCE76162547DD6F0058110A /* APIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCE76152547DD6F0058110A /* APIRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +141,8 @@
 		BCCE759E2547D7490058110A /* JSONAPIResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONAPIResponse.h; sourceTree = "<group>"; };
 		BCCE75AC2547D7920058110A /* SimpleAPIResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleAPIResponse.m; sourceTree = "<group>"; };
 		BCCE75B82547D7AD0058110A /* JSONAPIResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSONAPIResponse.m; sourceTree = "<group>"; };
+		BCCE75C42547D9610058110A /* APIRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIRequest.h; sourceTree = "<group>"; };
+		BCCE76152547DD6F0058110A /* APIRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIRequest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -315,6 +319,8 @@
 				BCCE75712547D61A0058110A /* HTTPMethod.h */,
 				BCCE757D2547D6270058110A /* HTTPMethod.m */,
 				BCCE75852547D6E80058110A /* APIResponse.h */,
+				BCCE75C42547D9610058110A /* APIRequest.h */,
+				BCCE76152547DD6F0058110A /* APIRequest.m */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -351,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCCE75932547D71E0058110A /* SimpleAPIResponse.h in Headers */,
+				BCCE75C52547D9610058110A /* APIRequest.h in Headers */,
 				BCCE755E2547D4F40058110A /* NetworkPlatform.h in Headers */,
 				BCCE75862547D6E80058110A /* APIResponse.h in Headers */,
 				BCCE75722547D61A0058110A /* HTTPMethod.h in Headers */,
@@ -618,6 +625,7 @@
 			files = (
 				BCCE75AD2547D7920058110A /* SimpleAPIResponse.m in Sources */,
 				BCCE757E2547D6270058110A /* HTTPMethod.m in Sources */,
+				BCCE76162547DD6F0058110A /* APIRequest.m in Sources */,
 				BCCE75B92547D7AD0058110A /* JSONAPIResponse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
