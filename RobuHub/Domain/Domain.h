@@ -6,6 +6,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Domain/User.h>
+#import <Domain/Repository.h>
+#import <Domain/RepositoriesUseCase.h>
+#import <Domain/UseCaseProvider.h>
 
 //! Project version number for Domain.
 FOUNDATION_EXPORT double DomainVersionNumber;
