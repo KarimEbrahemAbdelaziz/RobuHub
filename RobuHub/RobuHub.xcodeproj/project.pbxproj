@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		BCCE74B62547CF2A0058110A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE74B52547CF2A0058110A /* AppDelegate.swift */; };
 		BCCE74B82547CF2A0058110A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE74B72547CF2A0058110A /* SceneDelegate.swift */; };
-		BCCE74BA2547CF2A0058110A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE74B92547CF2A0058110A /* ViewController.swift */; };
 		BCCE74BD2547CF2A0058110A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCE74BB2547CF2A0058110A /* Main.storyboard */; };
 		BCCE74BF2547CF2C0058110A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCCE74BE2547CF2C0058110A /* Assets.xcassets */; };
 		BCCE74C22547CF2C0058110A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCE74C02547CF2C0058110A /* LaunchScreen.storyboard */; };
@@ -60,6 +59,12 @@
 		BCCE768A25480D870058110A /* ViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE768925480D870058110A /* ViewProtocol.swift */; };
 		BCCE768C25480DB10058110A /* Themable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE768B25480DB10058110A /* Themable.swift */; };
 		BCCE7691254810480058110A /* UIImageView+ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE7690254810480058110A /* UIImageView+ImageDownloader.swift */; };
+		BCCE769B254816580058110A /* SearchRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE769A254816580058110A /* SearchRoute.swift */; };
+		BCCE769D254817730058110A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE769C254817730058110A /* SearchViewController.swift */; };
+		BCCE769F254818590058110A /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE769E254818590058110A /* SearchPresenter.swift */; };
+		BCCE76A12548191A0058110A /* SearchConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE76A02548191A0058110A /* SearchConfigurator.swift */; };
+		BCCE76A525482C3F0058110A /* RepositoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE76A325482C3F0058110A /* RepositoryCell.swift */; };
+		BCCE76A625482C3F0058110A /* RepositoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCCE76A425482C3F0058110A /* RepositoryCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,7 +138,6 @@
 		BCCE74B22547CF2A0058110A /* RobuHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RobuHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCCE74B52547CF2A0058110A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCCE74B72547CF2A0058110A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BCCE74B92547CF2A0058110A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BCCE74BC2547CF2A0058110A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BCCE74BE2547CF2C0058110A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCCE74C12547CF2C0058110A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -189,6 +193,12 @@
 		BCCE768925480D870058110A /* ViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProtocol.swift; sourceTree = "<group>"; };
 		BCCE768B25480DB10058110A /* Themable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Themable.swift; sourceTree = "<group>"; };
 		BCCE7690254810480058110A /* UIImageView+ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+ImageDownloader.swift"; sourceTree = "<group>"; };
+		BCCE769A254816580058110A /* SearchRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRoute.swift; sourceTree = "<group>"; };
+		BCCE769C254817730058110A /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		BCCE769E254818590058110A /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
+		BCCE76A02548191A0058110A /* SearchConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchConfigurator.swift; sourceTree = "<group>"; };
+		BCCE76A325482C3F0058110A /* RepositoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryCell.swift; sourceTree = "<group>"; };
+		BCCE76A425482C3F0058110A /* RepositoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoryCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,14 +281,11 @@
 		BCCE74B42547CF2A0058110A /* RobuHub */ = {
 			isa = PBXGroup;
 			children = (
+				BCCE76942548124F0058110A /* Supporting */,
+				BCCE76932548122F0058110A /* Application */,
 				BCCE7680254809CC0058110A /* Core */,
-				BCCE74B52547CF2A0058110A /* AppDelegate.swift */,
-				BCCE74B72547CF2A0058110A /* SceneDelegate.swift */,
-				BCCE74B92547CF2A0058110A /* ViewController.swift */,
+				BCCE7692254811C80058110A /* Modules */,
 				BCCE74BB2547CF2A0058110A /* Main.storyboard */,
-				BCCE74BE2547CF2C0058110A /* Assets.xcassets */,
-				BCCE74C02547CF2C0058110A /* LaunchScreen.storyboard */,
-				BCCE74C32547CF2C0058110A /* Info.plist */,
 			);
 			path = RobuHub;
 			sourceTree = "<group>";
@@ -472,6 +479,86 @@
 				BCCE7690254810480058110A /* UIImageView+ImageDownloader.swift */,
 			);
 			path = ImageDownloader;
+			sourceTree = "<group>";
+		};
+		BCCE7692254811C80058110A /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				BCCE7695254816110058110A /* Search */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		BCCE76932548122F0058110A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				BCCE74B52547CF2A0058110A /* AppDelegate.swift */,
+				BCCE74B72547CF2A0058110A /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		BCCE76942548124F0058110A /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				BCCE74C02547CF2C0058110A /* LaunchScreen.storyboard */,
+				BCCE74BE2547CF2C0058110A /* Assets.xcassets */,
+				BCCE74C32547CF2C0058110A /* Info.plist */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		BCCE7695254816110058110A /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				BCCE76992548163C0058110A /* Route */,
+				BCCE7698254816350058110A /* Configurator */,
+				BCCE7697254816300058110A /* Presenter */,
+				BCCE76962548162B0058110A /* View */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		BCCE76962548162B0058110A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BCCE76A225482C100058110A /* RepositoryCell */,
+				BCCE769C254817730058110A /* SearchViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BCCE7697254816300058110A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BCCE769E254818590058110A /* SearchPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BCCE7698254816350058110A /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				BCCE76A02548191A0058110A /* SearchConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		BCCE76992548163C0058110A /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				BCCE769A254816580058110A /* SearchRoute.swift */,
+			);
+			path = Route;
+			sourceTree = "<group>";
+		};
+		BCCE76A225482C100058110A /* RepositoryCell */ = {
+			isa = PBXGroup;
+			children = (
+				BCCE76A325482C3F0058110A /* RepositoryCell.swift */,
+				BCCE76A425482C3F0058110A /* RepositoryCell.xib */,
+			);
+			path = RepositoryCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -688,6 +775,7 @@
 				BCCE74C22547CF2C0058110A /* LaunchScreen.storyboard in Resources */,
 				BCCE74BF2547CF2C0058110A /* Assets.xcassets in Resources */,
 				BCCE74BD2547CF2A0058110A /* Main.storyboard in Resources */,
+				BCCE76A625482C3F0058110A /* RepositoryCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -733,10 +821,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCCE76A12548191A0058110A /* SearchConfigurator.swift in Sources */,
+				BCCE769F254818590058110A /* SearchPresenter.swift in Sources */,
+				BCCE769D254817730058110A /* SearchViewController.swift in Sources */,
 				BCCE768625480B270058110A /* ConfiguratorProtocol.swift in Sources */,
-				BCCE74BA2547CF2A0058110A /* ViewController.swift in Sources */,
 				BCCE7683254809E70058110A /* Route.swift in Sources */,
+				BCCE769B254816580058110A /* SearchRoute.swift in Sources */,
 				BCCE74B62547CF2A0058110A /* AppDelegate.swift in Sources */,
+				BCCE76A525482C3F0058110A /* RepositoryCell.swift in Sources */,
 				BCCE768A25480D870058110A /* ViewProtocol.swift in Sources */,
 				BCCE74B82547CF2A0058110A /* SceneDelegate.swift in Sources */,
 				BCCE768C25480DB10058110A /* Themable.swift in Sources */,
@@ -979,7 +1071,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FQA9SHB233;
-				INFOPLIST_FILE = RobuHub/Info.plist;
+				INFOPLIST_FILE = RobuHub/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -987,7 +1079,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = come.karimebrahem.RobuHub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -998,7 +1090,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FQA9SHB233;
-				INFOPLIST_FILE = RobuHub/Info.plist;
+				INFOPLIST_FILE = RobuHub/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1006,7 +1098,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = come.karimebrahem.RobuHub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
