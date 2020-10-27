@@ -21,7 +21,7 @@
         return nil;
     }
     else {
-        return Nil;//[Repository withArray:value];
+        return [Repository withArray:value];
     }
 }
 
