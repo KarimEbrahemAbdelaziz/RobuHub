@@ -15,6 +15,17 @@
 		BCCE74C22547CF2C0058110A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCE74C02547CF2C0058110A /* LaunchScreen.storyboard */; };
 		BCCE74CD2547CF2C0058110A /* RobuHubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE74CC2547CF2C0058110A /* RobuHubTests.swift */; };
 		BCCE74D82547CF2C0058110A /* RobuHubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE74D72547CF2C0058110A /* RobuHubUITests.swift */; };
+		BCCE74F12547D1090058110A /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE74EF2547D1090058110A /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BCCE74F42547D1090058110A /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCCE74ED2547D1090058110A /* Domain.framework */; };
+		BCCE74F52547D1090058110A /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BCCE74ED2547D1090058110A /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BCCE750B2547D1F70058110A /* NSObject+JSONSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE750A2547D1F70058110A /* NSObject+JSONSerialization.h */; };
+		BCCE75132547D2630058110A /* NSObject+JSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCE75122547D2630058110A /* NSObject+JSONSerialization.m */; };
+		BCCE75192547D2C00058110A /* User.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE75182547D2C00058110A /* User.h */; };
+		BCCE75222547D2E70058110A /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCE75212547D2E70058110A /* User.m */; };
+		BCCE752A2547D3290058110A /* Repository.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE75292547D3290058110A /* Repository.h */; };
+		BCCE752F2547D33F0058110A /* Repository.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCE752E2547D33F0058110A /* Repository.m */; };
+		BCCE75352547D3840058110A /* RepositoriesUseCase.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE75342547D3840058110A /* RepositoriesUseCase.h */; };
+		BCCE753D2547D3D60058110A /* UseCaseProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE753C2547D3D60058110A /* UseCaseProvider.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +43,28 @@
 			remoteGlobalIDString = BCCE74B12547CF2A0058110A;
 			remoteInfo = RobuHub;
 		};
+		BCCE74F22547D1090058110A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCCE74AA2547CF2A0058110A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCCE74EC2547D1090058110A;
+			remoteInfo = Domain;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BCCE74F62547D1090058110A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BCCE74F52547D1090058110A /* Domain.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BCCE74B22547CF2A0058110A /* RobuHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RobuHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +81,17 @@
 		BCCE74D32547CF2C0058110A /* RobuHubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RobuHubUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCCE74D72547CF2C0058110A /* RobuHubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobuHubUITests.swift; sourceTree = "<group>"; };
 		BCCE74D92547CF2C0058110A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCCE74ED2547D1090058110A /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCCE74EF2547D1090058110A /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
+		BCCE74F02547D1090058110A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCCE750A2547D1F70058110A /* NSObject+JSONSerialization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSONSerialization.h"; sourceTree = "<group>"; };
+		BCCE75122547D2630058110A /* NSObject+JSONSerialization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JSONSerialization.m"; sourceTree = "<group>"; };
+		BCCE75182547D2C00058110A /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		BCCE75212547D2E70058110A /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		BCCE75292547D3290058110A /* Repository.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Repository.h; sourceTree = "<group>"; };
+		BCCE752E2547D33F0058110A /* Repository.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Repository.m; sourceTree = "<group>"; };
+		BCCE75342547D3840058110A /* RepositoriesUseCase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RepositoriesUseCase.h; sourceTree = "<group>"; };
+		BCCE753C2547D3D60058110A /* UseCaseProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UseCaseProvider.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCCE74F42547D1090058110A /* Domain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +117,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BCCE74EA2547D1090058110A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,6 +133,7 @@
 				BCCE74B42547CF2A0058110A /* RobuHub */,
 				BCCE74CB2547CF2C0058110A /* RobuHubTests */,
 				BCCE74D62547CF2C0058110A /* RobuHubUITests */,
+				BCCE74EE2547D1090058110A /* Domain */,
 				BCCE74B32547CF2A0058110A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +144,7 @@
 				BCCE74B22547CF2A0058110A /* RobuHub.app */,
 				BCCE74C82547CF2C0058110A /* RobuHubTests.xctest */,
 				BCCE74D32547CF2C0058110A /* RobuHubUITests.xctest */,
+				BCCE74ED2547D1090058110A /* Domain.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,7 +181,64 @@
 			path = RobuHubUITests;
 			sourceTree = "<group>";
 		};
+		BCCE74EE2547D1090058110A /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				BCCE75172547D29D0058110A /* Models */,
+				BCCE75092547D1E50058110A /* Mapping */,
+				BCCE75332547D3660058110A /* UseCases */,
+				BCCE74EF2547D1090058110A /* Domain.h */,
+				BCCE74F02547D1090058110A /* Info.plist */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		BCCE75092547D1E50058110A /* Mapping */ = {
+			isa = PBXGroup;
+			children = (
+				BCCE750A2547D1F70058110A /* NSObject+JSONSerialization.h */,
+				BCCE75122547D2630058110A /* NSObject+JSONSerialization.m */,
+			);
+			path = Mapping;
+			sourceTree = "<group>";
+		};
+		BCCE75172547D29D0058110A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BCCE75182547D2C00058110A /* User.h */,
+				BCCE75212547D2E70058110A /* User.m */,
+				BCCE75292547D3290058110A /* Repository.h */,
+				BCCE752E2547D33F0058110A /* Repository.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BCCE75332547D3660058110A /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				BCCE75342547D3840058110A /* RepositoriesUseCase.h */,
+				BCCE753C2547D3D60058110A /* UseCaseProvider.h */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BCCE74E82547D1090058110A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCCE75352547D3840058110A /* RepositoriesUseCase.h in Headers */,
+				BCCE753D2547D3D60058110A /* UseCaseProvider.h in Headers */,
+				BCCE74F12547D1090058110A /* Domain.h in Headers */,
+				BCCE75192547D2C00058110A /* User.h in Headers */,
+				BCCE752A2547D3290058110A /* Repository.h in Headers */,
+				BCCE750B2547D1F70058110A /* NSObject+JSONSerialization.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		BCCE74B12547CF2A0058110A /* RobuHub */ = {
@@ -138,10 +248,12 @@
 				BCCE74AE2547CF2A0058110A /* Sources */,
 				BCCE74AF2547CF2A0058110A /* Frameworks */,
 				BCCE74B02547CF2A0058110A /* Resources */,
+				BCCE74F62547D1090058110A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BCCE74F32547D1090058110A /* PBXTargetDependency */,
 			);
 			name = RobuHub;
 			productName = RobuHub;
@@ -184,6 +296,24 @@
 			productReference = BCCE74D32547CF2C0058110A /* RobuHubUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		BCCE74EC2547D1090058110A /* Domain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCCE74F92547D1090058110A /* Build configuration list for PBXNativeTarget "Domain" */;
+			buildPhases = (
+				BCCE74E82547D1090058110A /* Headers */,
+				BCCE74E92547D1090058110A /* Sources */,
+				BCCE74EA2547D1090058110A /* Frameworks */,
+				BCCE74EB2547D1090058110A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Domain;
+			productName = Domain;
+			productReference = BCCE74ED2547D1090058110A /* Domain.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -204,6 +334,9 @@
 						CreatedOnToolsVersion = 12.0.1;
 						TestTargetID = BCCE74B12547CF2A0058110A;
 					};
+					BCCE74EC2547D1090058110A = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
 				};
 			};
 			buildConfigurationList = BCCE74AD2547CF2A0058110A /* Build configuration list for PBXProject "RobuHub" */;
@@ -222,6 +355,7 @@
 				BCCE74B12547CF2A0058110A /* RobuHub */,
 				BCCE74C72547CF2C0058110A /* RobuHubTests */,
 				BCCE74D22547CF2C0058110A /* RobuHubUITests */,
+				BCCE74EC2547D1090058110A /* Domain */,
 			);
 		};
 /* End PBXProject section */
@@ -245,6 +379,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BCCE74D12547CF2C0058110A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCCE74EB2547D1090058110A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -280,6 +421,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BCCE74E92547D1090058110A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCCE75222547D2E70058110A /* User.m in Sources */,
+				BCCE752F2547D33F0058110A /* Repository.m in Sources */,
+				BCCE75132547D2630058110A /* NSObject+JSONSerialization.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -292,6 +443,11 @@
 			isa = PBXTargetDependency;
 			target = BCCE74B12547CF2A0058110A /* RobuHub */;
 			targetProxy = BCCE74D42547CF2C0058110A /* PBXContainerItemProxy */;
+		};
+		BCCE74F32547D1090058110A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCCE74EC2547D1090058110A /* Domain */;
+			targetProxy = BCCE74F22547D1090058110A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -553,6 +709,58 @@
 			};
 			name = Release;
 		};
+		BCCE74F72547D1090058110A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = FQA9SHB233;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Domain/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = come.karimebrahem.Domain;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BCCE74F82547D1090058110A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = FQA9SHB233;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Domain/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = come.karimebrahem.Domain;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -588,6 +796,15 @@
 			buildConfigurations = (
 				BCCE74E32547CF2C0058110A /* Debug */,
 				BCCE74E42547CF2C0058110A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCCE74F92547D1090058110A /* Build configuration list for PBXNativeTarget "Domain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCCE74F72547D1090058110A /* Debug */,
+				BCCE74F82547D1090058110A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
