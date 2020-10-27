@@ -114,7 +114,6 @@ extension SearchViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "RepositoryCell", for: indexPath) as! RepositoryCell
         presenter?.configure(cell: cell, forRow: indexPath.row)
-        
         return cell
     }
 }

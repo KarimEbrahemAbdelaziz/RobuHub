@@ -16,6 +16,7 @@ protocol SearchPresenter {
     func configure(cell: RepositoryCellView, forRow row: Int)
     func didSelect(row: Int)
     func search(for repositoryName: String)
+    func loadNextPage()
     func removeSearchItems()
 }
 
@@ -33,8 +34,9 @@ class SearchPresenterImplementation: SearchPresenter {
             }
         }
     }
-    private let currentPageNumber: Int32 = 1
     private let defaultCountPerPage: Int32 = 10
+    private var currentPageNumber = 1
+    private var searchQueryName: String = ""
     
     init(view: SearchView,
          searchRepositoriesUseCase: RepositoriesUseCase) {
@@ -42,7 +44,13 @@ class SearchPresenterImplementation: SearchPresenter {
         self.searchRepositoriesUseCase = searchRepositoriesUseCase
     }
     
-    // MARK: - Functions
+    // MARK: - Private Functions
+    
+    private func checkForLastItem(at row: Int) {
+        if row == numberOfRepositories - 1 {
+            loadNextPage()
+        }
+    }
     
     var numberOfRepositories: Int {
         return repositories.count
@@ -57,8 +65,8 @@ extension SearchPresenterImplementation {
     
     func configure(cell: RepositoryCellView, forRow row: Int) {
         let repository = repositories[row]
-        
         cell.display(repoName: repository.name, ownerName: repository.owner.login, ownerImageUrl: repository.owner.avatar_url, creationDate: "13:22 PM")
+        checkForLastItem(at: row)
     }
     
     func removeSearchItems() {
@@ -66,17 +74,22 @@ extension SearchPresenterImplementation {
     }
     
     func search(for repositoryName: String) {
+        searchQueryName = repositoryName
         view?.hideEmptyStatus()
         view?.showLoadingIndicator()
-        searchRepositoriesUseCase.fetchRepositories(repositoryName, page: currentPageNumber, countPerPage: defaultCountPerPage) { [weak self] repositories in
+        searchRepositoriesUseCase.fetchRepositories(repositoryName, page: Int32(currentPageNumber), countPerPage: defaultCountPerPage) { [weak self] repositories in
             self?.view?.hideLoadingIndicator()
             guard let repos = repositories as? [Repository] else {
-                print("Can't parse.")
                 return
             }
             
-            self?.repositories = repos
+            self?.repositories += repos
         }
+    }
+    
+    func loadNextPage() {
+        currentPageNumber += 1
+        search(for: searchQueryName)
     }
     
     func didSelect(row: Int) {
