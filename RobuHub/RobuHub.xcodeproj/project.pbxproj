@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC321DDD25484DB300BE9D8A /* CustomDateFormate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC321DDC25484DB300BE9D8A /* CustomDateFormate.swift */; };
 		BCCE74B62547CF2A0058110A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE74B52547CF2A0058110A /* AppDelegate.swift */; };
 		BCCE74B82547CF2A0058110A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE74B72547CF2A0058110A /* SceneDelegate.swift */; };
 		BCCE74BD2547CF2A0058110A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCE74BB2547CF2A0058110A /* Main.storyboard */; };
@@ -138,6 +139,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BC321DDC25484DB300BE9D8A /* CustomDateFormate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDateFormate.swift; sourceTree = "<group>"; };
 		BCCE74B22547CF2A0058110A /* RobuHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RobuHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCCE74B52547CF2A0058110A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCCE74B72547CF2A0058110A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -257,6 +259,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC321DDB25484D9D00BE9D8A /* DateFormate */ = {
+			isa = PBXGroup;
+			children = (
+				BC321DDC25484DB300BE9D8A /* CustomDateFormate.swift */,
+			);
+			path = DateFormate;
+			sourceTree = "<group>";
+		};
 		BCCE74A92547CF2A0058110A = {
 			isa = PBXGroup;
 			children = (
@@ -438,6 +448,7 @@
 		BCCE7680254809CC0058110A /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				BC321DDB25484D9D00BE9D8A /* DateFormate */,
 				BCCE768F2548101E0058110A /* ImageDownloader */,
 				BCCE768725480D620058110A /* Themable */,
 				BCCE768825480D6A0058110A /* ViewProtocol */,
@@ -871,6 +882,7 @@
 				BCCE769B254816580058110A /* SearchRoute.swift in Sources */,
 				BCCE74B62547CF2A0058110A /* AppDelegate.swift in Sources */,
 				BCCE76A525482C3F0058110A /* RepositoryCell.swift in Sources */,
+				BC321DDD25484DB300BE9D8A /* CustomDateFormate.swift in Sources */,
 				BCCE768A25480D870058110A /* ViewProtocol.swift in Sources */,
 				BCCE76AD254844F70058110A /* RepositoryDetailsConfigurator.swift in Sources */,
 				BCCE74B82547CF2A0058110A /* SceneDelegate.swift in Sources */,
