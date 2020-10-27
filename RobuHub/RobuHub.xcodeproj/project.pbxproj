@@ -57,6 +57,8 @@
 		BCCE76702547E3EF0058110A /* UseCaseProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCE766F2547E3EF0058110A /* UseCaseProvider.m */; };
 		BCCE7683254809E70058110A /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE7682254809E70058110A /* Route.swift */; };
 		BCCE768625480B270058110A /* ConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE768525480B270058110A /* ConfiguratorProtocol.swift */; };
+		BCCE768A25480D870058110A /* ViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE768925480D870058110A /* ViewProtocol.swift */; };
+		BCCE768C25480DB10058110A /* Themable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE768B25480DB10058110A /* Themable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -183,6 +185,8 @@
 		BCCE766F2547E3EF0058110A /* UseCaseProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UseCaseProvider.m; sourceTree = "<group>"; };
 		BCCE7682254809E70058110A /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		BCCE768525480B270058110A /* ConfiguratorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguratorProtocol.swift; sourceTree = "<group>"; };
+		BCCE768925480D870058110A /* ViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProtocol.swift; sourceTree = "<group>"; };
+		BCCE768B25480DB10058110A /* Themable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Themable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -419,7 +423,9 @@
 		BCCE7680254809CC0058110A /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				BCCE768425480AB70058110A /* BaseConfigurator */,
+				BCCE768725480D620058110A /* Themable */,
+				BCCE768825480D6A0058110A /* ViewProtocol */,
+				BCCE768425480AB70058110A /* ConfiguratorProtocol */,
 				BCCE7681254809D10058110A /* NavigationRoute */,
 			);
 			path = Core;
@@ -433,12 +439,28 @@
 			path = NavigationRoute;
 			sourceTree = "<group>";
 		};
-		BCCE768425480AB70058110A /* BaseConfigurator */ = {
+		BCCE768425480AB70058110A /* ConfiguratorProtocol */ = {
 			isa = PBXGroup;
 			children = (
 				BCCE768525480B270058110A /* ConfiguratorProtocol.swift */,
 			);
-			path = BaseConfigurator;
+			path = ConfiguratorProtocol;
+			sourceTree = "<group>";
+		};
+		BCCE768725480D620058110A /* Themable */ = {
+			isa = PBXGroup;
+			children = (
+				BCCE768B25480DB10058110A /* Themable.swift */,
+			);
+			path = Themable;
+			sourceTree = "<group>";
+		};
+		BCCE768825480D6A0058110A /* ViewProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				BCCE768925480D870058110A /* ViewProtocol.swift */,
+			);
+			path = ViewProtocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -704,7 +726,9 @@
 				BCCE74BA2547CF2A0058110A /* ViewController.swift in Sources */,
 				BCCE7683254809E70058110A /* Route.swift in Sources */,
 				BCCE74B62547CF2A0058110A /* AppDelegate.swift in Sources */,
+				BCCE768A25480D870058110A /* ViewProtocol.swift in Sources */,
 				BCCE74B82547CF2A0058110A /* SceneDelegate.swift in Sources */,
+				BCCE768C25480DB10058110A /* Themable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
