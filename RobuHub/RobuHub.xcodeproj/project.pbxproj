@@ -24,6 +24,7 @@
 		BCCE75222547D2E70058110A /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCE75212547D2E70058110A /* User.m */; };
 		BCCE752A2547D3290058110A /* Repository.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE75292547D3290058110A /* Repository.h */; };
 		BCCE752F2547D33F0058110A /* Repository.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCE752E2547D33F0058110A /* Repository.m */; };
+		BCCE75352547D3840058110A /* RepositoriesUseCase.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE75342547D3840058110A /* RepositoriesUseCase.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		BCCE75212547D2E70058110A /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		BCCE75292547D3290058110A /* Repository.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Repository.h; sourceTree = "<group>"; };
 		BCCE752E2547D33F0058110A /* Repository.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Repository.m; sourceTree = "<group>"; };
+		BCCE75342547D3840058110A /* RepositoriesUseCase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RepositoriesUseCase.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +184,7 @@
 			children = (
 				BCCE75172547D29D0058110A /* Models */,
 				BCCE75092547D1E50058110A /* Mapping */,
+				BCCE75332547D3660058110A /* UseCases */,
 				BCCE74EF2547D1090058110A /* Domain.h */,
 				BCCE74F02547D1090058110A /* Info.plist */,
 			);
@@ -208,6 +211,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		BCCE75332547D3660058110A /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				BCCE75342547D3840058110A /* RepositoriesUseCase.h */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -215,6 +226,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCCE75352547D3840058110A /* RepositoriesUseCase.h in Headers */,
 				BCCE74F12547D1090058110A /* Domain.h in Headers */,
 				BCCE75192547D2C00058110A /* User.h in Headers */,
 				BCCE752A2547D3290058110A /* Repository.h in Headers */,
