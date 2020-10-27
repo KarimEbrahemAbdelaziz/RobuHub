@@ -53,6 +53,8 @@
 		BCCE76672547E3610058110A /* GithubClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCE76662547E3610058110A /* GithubClient.m */; };
 		BCCE766A2547E3AE0058110A /* RepositoriesUseCase.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE76692547E3AE0058110A /* RepositoriesUseCase.h */; };
 		BCCE766C2547E3B60058110A /* RepositoriesUseCase.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCE766B2547E3B60058110A /* RepositoriesUseCase.m */; };
+		BCCE766E2547E3E50058110A /* UseCaseProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE766D2547E3E50058110A /* UseCaseProvider.h */; };
+		BCCE76702547E3EF0058110A /* UseCaseProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCE766F2547E3EF0058110A /* UseCaseProvider.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -175,6 +177,8 @@
 		BCCE76662547E3610058110A /* GithubClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GithubClient.m; sourceTree = "<group>"; };
 		BCCE76692547E3AE0058110A /* RepositoriesUseCase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RepositoriesUseCase.h; sourceTree = "<group>"; };
 		BCCE766B2547E3B60058110A /* RepositoriesUseCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RepositoriesUseCase.m; sourceTree = "<group>"; };
+		BCCE766D2547E3E50058110A /* UseCaseProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UseCaseProvider.h; sourceTree = "<group>"; };
+		BCCE766F2547E3EF0058110A /* UseCaseProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UseCaseProvider.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -401,6 +405,8 @@
 			children = (
 				BCCE76692547E3AE0058110A /* RepositoriesUseCase.h */,
 				BCCE766B2547E3B60058110A /* RepositoriesUseCase.m */,
+				BCCE766D2547E3E50058110A /* UseCaseProvider.h */,
+				BCCE766F2547E3EF0058110A /* UseCaseProvider.m */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -433,6 +439,7 @@
 				BCCE76592547DF0B0058110A /* RepositoriesResponse.h in Headers */,
 				BCCE76652547E34E0058110A /* GithubClient.h in Headers */,
 				BCCE75862547D6E80058110A /* APIResponse.h in Headers */,
+				BCCE766E2547E3E50058110A /* UseCaseProvider.h in Headers */,
 				BCCE765D2547E2B10058110A /* GithubJSONRequest.h in Headers */,
 				BCCE76222547DDAF0058110A /* APIClient.h in Headers */,
 				BCCE75722547D61A0058110A /* HTTPMethod.h in Headers */,
@@ -701,6 +708,7 @@
 			files = (
 				BCCE76672547E3610058110A /* GithubClient.m in Sources */,
 				BCCE76292547DDB80058110A /* APIClient.m in Sources */,
+				BCCE76702547E3EF0058110A /* UseCaseProvider.m in Sources */,
 				BCCE76632547E3190058110A /* RepositoriesRequest.m in Sources */,
 				BCCE765F2547E2B90058110A /* GithubJSONRequest.m in Sources */,
 				BCCE75AD2547D7920058110A /* SimpleAPIResponse.m in Sources */,
