@@ -60,6 +60,7 @@
 		BCCE768A25480D870058110A /* ViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE768925480D870058110A /* ViewProtocol.swift */; };
 		BCCE768C25480DB10058110A /* Themable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE768B25480DB10058110A /* Themable.swift */; };
 		BCCE7691254810480058110A /* UIImageView+ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE7690254810480058110A /* UIImageView+ImageDownloader.swift */; };
+		BCCE769B254816580058110A /* SearchRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE769A254816580058110A /* SearchRoute.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -189,6 +190,7 @@
 		BCCE768925480D870058110A /* ViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProtocol.swift; sourceTree = "<group>"; };
 		BCCE768B25480DB10058110A /* Themable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Themable.swift; sourceTree = "<group>"; };
 		BCCE7690254810480058110A /* UIImageView+ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+ImageDownloader.swift"; sourceTree = "<group>"; };
+		BCCE769A254816580058110A /* SearchRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRoute.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -475,6 +477,7 @@
 		BCCE7692254811C80058110A /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				BCCE7695254816110058110A /* Search */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -496,6 +499,46 @@
 				BCCE74C32547CF2C0058110A /* Info.plist */,
 			);
 			path = Supporting;
+			sourceTree = "<group>";
+		};
+		BCCE7695254816110058110A /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				BCCE76992548163C0058110A /* Route */,
+				BCCE7698254816350058110A /* Configurator */,
+				BCCE7697254816300058110A /* Presenter */,
+				BCCE76962548162B0058110A /* View */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		BCCE76962548162B0058110A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BCCE7697254816300058110A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BCCE7698254816350058110A /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		BCCE76992548163C0058110A /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				BCCE769A254816580058110A /* SearchRoute.swift */,
+			);
+			path = Route;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -760,6 +803,7 @@
 				BCCE768625480B270058110A /* ConfiguratorProtocol.swift in Sources */,
 				BCCE74BA2547CF2A0058110A /* ViewController.swift in Sources */,
 				BCCE7683254809E70058110A /* Route.swift in Sources */,
+				BCCE769B254816580058110A /* SearchRoute.swift in Sources */,
 				BCCE74B62547CF2A0058110A /* AppDelegate.swift in Sources */,
 				BCCE768A25480D870058110A /* ViewProtocol.swift in Sources */,
 				BCCE74B82547CF2A0058110A /* SceneDelegate.swift in Sources */,
