@@ -271,14 +271,12 @@
 		BCCE74B42547CF2A0058110A /* RobuHub */ = {
 			isa = PBXGroup;
 			children = (
+				BCCE76942548124F0058110A /* Supporting */,
+				BCCE76932548122F0058110A /* Application */,
 				BCCE7680254809CC0058110A /* Core */,
-				BCCE74B52547CF2A0058110A /* AppDelegate.swift */,
-				BCCE74B72547CF2A0058110A /* SceneDelegate.swift */,
+				BCCE7692254811C80058110A /* Modules */,
 				BCCE74B92547CF2A0058110A /* ViewController.swift */,
 				BCCE74BB2547CF2A0058110A /* Main.storyboard */,
-				BCCE74BE2547CF2C0058110A /* Assets.xcassets */,
-				BCCE74C02547CF2C0058110A /* LaunchScreen.storyboard */,
-				BCCE74C32547CF2C0058110A /* Info.plist */,
 			);
 			path = RobuHub;
 			sourceTree = "<group>";
@@ -472,6 +470,32 @@
 				BCCE7690254810480058110A /* UIImageView+ImageDownloader.swift */,
 			);
 			path = ImageDownloader;
+			sourceTree = "<group>";
+		};
+		BCCE7692254811C80058110A /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		BCCE76932548122F0058110A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				BCCE74B72547CF2A0058110A /* SceneDelegate.swift */,
+				BCCE74B52547CF2A0058110A /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		BCCE76942548124F0058110A /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				BCCE74C02547CF2C0058110A /* LaunchScreen.storyboard */,
+				BCCE74BE2547CF2C0058110A /* Assets.xcassets */,
+				BCCE74C32547CF2C0058110A /* Info.plist */,
+			);
+			path = Supporting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -979,7 +1003,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FQA9SHB233;
-				INFOPLIST_FILE = RobuHub/Info.plist;
+				INFOPLIST_FILE = RobuHub/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -987,7 +1011,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = come.karimebrahem.RobuHub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -998,7 +1022,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FQA9SHB233;
-				INFOPLIST_FILE = RobuHub/Info.plist;
+				INFOPLIST_FILE = RobuHub/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1006,7 +1030,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = come.karimebrahem.RobuHub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
