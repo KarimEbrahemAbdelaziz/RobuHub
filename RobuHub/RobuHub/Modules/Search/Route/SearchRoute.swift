@@ -15,14 +15,14 @@ enum SearchRoute: Route {
     var defaultStyle: PresentingStyle {
         switch self {
         default:
-            return .modal()
+            return .modal(modalPresentationStyle: .formSheet, animated: true)
         }
     }
 
     var destination: UIViewController {
         switch self {
-        case .repositoryDetails(_):
-            return UIViewController()
+        case let .repositoryDetails(repository):
+            return RepositoryDetailsConfigurator.repositoryDetailsViewController(repository: repository).viewController
         }
     }
 }
