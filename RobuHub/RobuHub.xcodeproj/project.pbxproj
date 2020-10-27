@@ -65,6 +65,9 @@
 		BCCE76A12548191A0058110A /* SearchConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE76A02548191A0058110A /* SearchConfigurator.swift */; };
 		BCCE76A525482C3F0058110A /* RepositoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE76A325482C3F0058110A /* RepositoryCell.swift */; };
 		BCCE76A625482C3F0058110A /* RepositoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCCE76A425482C3F0058110A /* RepositoryCell.xib */; };
+		BCCE76AA254843E90058110A /* RepositoryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE76A9254843E90058110A /* RepositoryDetailsViewController.swift */; };
+		BCCE76AD254844F70058110A /* RepositoryDetailsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE76AC254844F70058110A /* RepositoryDetailsConfigurator.swift */; };
+		BCCE76B0254847170058110A /* RepositoryDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE76AF254847170058110A /* RepositoryDetailsPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -199,6 +202,9 @@
 		BCCE76A02548191A0058110A /* SearchConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchConfigurator.swift; sourceTree = "<group>"; };
 		BCCE76A325482C3F0058110A /* RepositoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryCell.swift; sourceTree = "<group>"; };
 		BCCE76A425482C3F0058110A /* RepositoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoryCell.xib; sourceTree = "<group>"; };
+		BCCE76A9254843E90058110A /* RepositoryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailsViewController.swift; sourceTree = "<group>"; };
+		BCCE76AC254844F70058110A /* RepositoryDetailsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailsConfigurator.swift; sourceTree = "<group>"; };
+		BCCE76AF254847170058110A /* RepositoryDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailsPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -484,6 +490,7 @@
 		BCCE7692254811C80058110A /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				BCCE76A7254843610058110A /* RepositoryDetails */,
 				BCCE7695254816110058110A /* Search */,
 			);
 			path = Modules;
@@ -559,6 +566,40 @@
 				BCCE76A425482C3F0058110A /* RepositoryCell.xib */,
 			);
 			path = RepositoryCell;
+			sourceTree = "<group>";
+		};
+		BCCE76A7254843610058110A /* RepositoryDetails */ = {
+			isa = PBXGroup;
+			children = (
+				BCCE76AE254847010058110A /* Presenter */,
+				BCCE76AB254844E20058110A /* Configurator */,
+				BCCE76A8254843D80058110A /* View */,
+			);
+			path = RepositoryDetails;
+			sourceTree = "<group>";
+		};
+		BCCE76A8254843D80058110A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BCCE76A9254843E90058110A /* RepositoryDetailsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BCCE76AB254844E20058110A /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				BCCE76AC254844F70058110A /* RepositoryDetailsConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		BCCE76AE254847010058110A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BCCE76AF254847170058110A /* RepositoryDetailsPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -822,6 +863,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCCE76A12548191A0058110A /* SearchConfigurator.swift in Sources */,
+				BCCE76B0254847170058110A /* RepositoryDetailsPresenter.swift in Sources */,
 				BCCE769F254818590058110A /* SearchPresenter.swift in Sources */,
 				BCCE769D254817730058110A /* SearchViewController.swift in Sources */,
 				BCCE768625480B270058110A /* ConfiguratorProtocol.swift in Sources */,
@@ -830,7 +872,9 @@
 				BCCE74B62547CF2A0058110A /* AppDelegate.swift in Sources */,
 				BCCE76A525482C3F0058110A /* RepositoryCell.swift in Sources */,
 				BCCE768A25480D870058110A /* ViewProtocol.swift in Sources */,
+				BCCE76AD254844F70058110A /* RepositoryDetailsConfigurator.swift in Sources */,
 				BCCE74B82547CF2A0058110A /* SceneDelegate.swift in Sources */,
+				BCCE76AA254843E90058110A /* RepositoryDetailsViewController.swift in Sources */,
 				BCCE768C25480DB10058110A /* Themable.swift in Sources */,
 				BCCE7691254810480058110A /* UIImageView+ImageDownloader.swift in Sources */,
 			);

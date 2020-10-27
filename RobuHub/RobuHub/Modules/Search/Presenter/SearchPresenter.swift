@@ -94,5 +94,7 @@ extension SearchPresenterImplementation {
     
     func didSelect(row: Int) {
         print("Selected Row: \(row)")
+        let repoDetailsRoute = SearchRoute.repositoryDetails(repository: repositories[row])
+        view?.navigateTo(repoDetailsRoute)
     }
 }
