@@ -51,9 +51,9 @@
 		BCCE76632547E3190058110A /* RepositoriesRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCE76622547E3190058110A /* RepositoriesRequest.m */; };
 		BCCE76652547E34E0058110A /* GithubClient.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE76642547E34E0058110A /* GithubClient.h */; };
 		BCCE76672547E3610058110A /* GithubClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCE76662547E3610058110A /* GithubClient.m */; };
-		BCCE766A2547E3AE0058110A /* RepositoriesUseCase.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE76692547E3AE0058110A /* RepositoriesUseCase.h */; };
+		BCCE766A2547E3AE0058110A /* RepositoriesUseCase.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE76692547E3AE0058110A /* RepositoriesUseCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BCCE766C2547E3B60058110A /* RepositoriesUseCase.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCE766B2547E3B60058110A /* RepositoriesUseCase.m */; };
-		BCCE766E2547E3E50058110A /* UseCaseProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE766D2547E3E50058110A /* UseCaseProvider.h */; };
+		BCCE766E2547E3E50058110A /* UseCaseProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE766D2547E3E50058110A /* UseCaseProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BCCE76702547E3EF0058110A /* UseCaseProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCE766F2547E3EF0058110A /* UseCaseProvider.m */; };
 /* End PBXBuildFile section */
 

@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <NetworkPlatform/UseCaseProvider.h>
 
 //! Project version number for NetworkPlatform.
 FOUNDATION_EXPORT double NetworkPlatformVersionNumber;
