@@ -13,6 +13,7 @@ protocol SearchPresenter {
     var numberOfRepositories: Int { get }
     
     func viewDidLoad()
+    func configure(cell: RepositoryCellView, forRow row: Int)
     func didSelect(row: Int)
     func search(for repositoryName: String)
 }
@@ -52,6 +53,12 @@ class SearchPresenterImplementation: SearchPresenter {
 extension SearchPresenterImplementation {
     func viewDidLoad() {
         view?.showEmptyStatus()
+    }
+    
+    func configure(cell: RepositoryCellView, forRow row: Int) {
+        let repository = repositories[row]
+        
+        cell.display(repoName: repository.name, ownerName: repository.owner.login, ownerImageUrl: repository.owner.avatar_url, creationDate: "13:22 PM")
     }
     
     func search(for repositoryName: String) {

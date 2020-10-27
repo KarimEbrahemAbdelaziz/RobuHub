@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import NetworkPlatform
 
 // MARK: - View Protocol
 
@@ -31,12 +32,19 @@ class SearchViewController: UIViewController {
 
     var presenter: SearchPresenter?
 
-    // MARK: View LifeCycle
+    // MARK: - View LifeCycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         updateViewTheme()
+        setupRepositoriesTableView()
+    }
+    
+    // MARK: - Private Functions
+    
+    private func setupRepositoriesTableView() {
+        repositoriesTableView.register(UINib(nibName: "RepositoryCell", bundle: nil), forCellReuseIdentifier: "RepositoryCell")
     }
 
 }
@@ -85,7 +93,10 @@ extension SearchViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "RepositoryCell", for: indexPath) as! RepositoryCell
+        presenter?.configure(cell: cell, forRow: indexPath.row)
+        
+        return cell
     }
 }
 
@@ -94,5 +105,16 @@ extension SearchViewController: UITableViewDataSource {
 extension SearchViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         presenter?.didSelect(row: indexPath.row)
+    }
+}
+
+// MARK: - UISearchBar Delegate
+
+extension SearchViewController: UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        guard let searchRepositoryName = searchBar.text else { return }
+        
+        searchBar.endEditing(true)
+        presenter?.search(for: searchRepositoryName)
     }
 }

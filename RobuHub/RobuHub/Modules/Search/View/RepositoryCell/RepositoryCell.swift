@@ -7,17 +7,27 @@
 
 import UIKit
 
-class RepositoryCell: UITableViewCell {
+protocol RepositoryCellView {
+    func display(repoName: String, ownerName: String, ownerImageUrl: String, creationDate: String)
+}
 
+class RepositoryCell: UITableViewCell, RepositoryCellView {
+
+    @IBOutlet private weak var repositoryNameLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func display(repoName: String, ownerName: String, ownerImageUrl: String, creationDate: String) {
+        repositoryNameLabel.text = repoName
     }
     
+}
+
+extension RepositoryCell: Themable {
+    func updateViewTheme() {
+        repositoryNameLabel.textColor = .black
+        repositoryNameLabel.font = UIFont.systemFont(ofSize: 16, weight: .medium)
+    }
 }
