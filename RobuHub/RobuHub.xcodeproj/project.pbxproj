@@ -20,6 +20,8 @@
 		BCCE74F52547D1090058110A /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BCCE74ED2547D1090058110A /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BCCE750B2547D1F70058110A /* NSObject+JSONSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE750A2547D1F70058110A /* NSObject+JSONSerialization.h */; };
 		BCCE75132547D2630058110A /* NSObject+JSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCE75122547D2630058110A /* NSObject+JSONSerialization.m */; };
+		BCCE75192547D2C00058110A /* User.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE75182547D2C00058110A /* User.h */; };
+		BCCE75222547D2E70058110A /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCE75212547D2E70058110A /* User.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 		BCCE74F02547D1090058110A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCCE750A2547D1F70058110A /* NSObject+JSONSerialization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSONSerialization.h"; sourceTree = "<group>"; };
 		BCCE75122547D2630058110A /* NSObject+JSONSerialization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JSONSerialization.m"; sourceTree = "<group>"; };
+		BCCE75182547D2C00058110A /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		BCCE75212547D2E70058110A /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +176,7 @@
 		BCCE74EE2547D1090058110A /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				BCCE75172547D29D0058110A /* Models */,
 				BCCE75092547D1E50058110A /* Mapping */,
 				BCCE74EF2547D1090058110A /* Domain.h */,
 				BCCE74F02547D1090058110A /* Info.plist */,
@@ -188,6 +193,15 @@
 			path = Mapping;
 			sourceTree = "<group>";
 		};
+		BCCE75172547D29D0058110A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BCCE75182547D2C00058110A /* User.h */,
+				BCCE75212547D2E70058110A /* User.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -196,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCCE74F12547D1090058110A /* Domain.h in Headers */,
+				BCCE75192547D2C00058110A /* User.h in Headers */,
 				BCCE750B2547D1F70058110A /* NSObject+JSONSerialization.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,6 +402,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCCE75222547D2E70058110A /* User.m in Sources */,
 				BCCE75132547D2630058110A /* NSObject+JSONSerialization.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
