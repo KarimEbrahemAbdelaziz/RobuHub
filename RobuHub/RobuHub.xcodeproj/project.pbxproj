@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BCCE74B62547CF2A0058110A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE74B52547CF2A0058110A /* AppDelegate.swift */; };
+		BCCE74B82547CF2A0058110A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE74B72547CF2A0058110A /* SceneDelegate.swift */; };
+		BCCE74BA2547CF2A0058110A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE74B92547CF2A0058110A /* ViewController.swift */; };
+		BCCE74BD2547CF2A0058110A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCE74BB2547CF2A0058110A /* Main.storyboard */; };
+		BCCE74BF2547CF2C0058110A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCCE74BE2547CF2C0058110A /* Assets.xcassets */; };
+		BCCE74C22547CF2C0058110A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCCE74C02547CF2C0058110A /* LaunchScreen.storyboard */; };
+		BCCE74CD2547CF2C0058110A /* RobuHubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE74CC2547CF2C0058110A /* RobuHubTests.swift */; };
+		BCCE74D82547CF2C0058110A /* RobuHubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCE74D72547CF2C0058110A /* RobuHubUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BCCE74C92547CF2C0058110A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCCE74AA2547CF2A0058110A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCCE74B12547CF2A0058110A;
+			remoteInfo = RobuHub;
+		};
+		BCCE74D42547CF2C0058110A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCCE74AA2547CF2A0058110A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCCE74B12547CF2A0058110A;
+			remoteInfo = RobuHub;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BCCE74B22547CF2A0058110A /* RobuHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RobuHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCCE74B52547CF2A0058110A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BCCE74B72547CF2A0058110A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BCCE74B92547CF2A0058110A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BCCE74BC2547CF2A0058110A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BCCE74BE2547CF2C0058110A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCCE74C12547CF2C0058110A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BCCE74C32547CF2C0058110A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCCE74C82547CF2C0058110A /* RobuHubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RobuHubTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCCE74CC2547CF2C0058110A /* RobuHubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobuHubTests.swift; sourceTree = "<group>"; };
+		BCCE74CE2547CF2C0058110A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCCE74D32547CF2C0058110A /* RobuHubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RobuHubUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCCE74D72547CF2C0058110A /* RobuHubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobuHubUITests.swift; sourceTree = "<group>"; };
+		BCCE74D92547CF2C0058110A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCCE74AF2547CF2A0058110A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCCE74C52547CF2C0058110A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCCE74D02547CF2C0058110A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BCCE74A92547CF2A0058110A = {
+			isa = PBXGroup;
+			children = (
+				BCCE74B42547CF2A0058110A /* RobuHub */,
+				BCCE74CB2547CF2C0058110A /* RobuHubTests */,
+				BCCE74D62547CF2C0058110A /* RobuHubUITests */,
+				BCCE74B32547CF2A0058110A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BCCE74B32547CF2A0058110A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCCE74B22547CF2A0058110A /* RobuHub.app */,
+				BCCE74C82547CF2C0058110A /* RobuHubTests.xctest */,
+				BCCE74D32547CF2C0058110A /* RobuHubUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCCE74B42547CF2A0058110A /* RobuHub */ = {
+			isa = PBXGroup;
+			children = (
+				BCCE74B52547CF2A0058110A /* AppDelegate.swift */,
+				BCCE74B72547CF2A0058110A /* SceneDelegate.swift */,
+				BCCE74B92547CF2A0058110A /* ViewController.swift */,
+				BCCE74BB2547CF2A0058110A /* Main.storyboard */,
+				BCCE74BE2547CF2C0058110A /* Assets.xcassets */,
+				BCCE74C02547CF2C0058110A /* LaunchScreen.storyboard */,
+				BCCE74C32547CF2C0058110A /* Info.plist */,
+			);
+			path = RobuHub;
+			sourceTree = "<group>";
+		};
+		BCCE74CB2547CF2C0058110A /* RobuHubTests */ = {
+			isa = PBXGroup;
+			children = (
+				BCCE74CC2547CF2C0058110A /* RobuHubTests.swift */,
+				BCCE74CE2547CF2C0058110A /* Info.plist */,
+			);
+			path = RobuHubTests;
+			sourceTree = "<group>";
+		};
+		BCCE74D62547CF2C0058110A /* RobuHubUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BCCE74D72547CF2C0058110A /* RobuHubUITests.swift */,
+				BCCE74D92547CF2C0058110A /* Info.plist */,
+			);
+			path = RobuHubUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCCE74B12547CF2A0058110A /* RobuHub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCCE74DC2547CF2C0058110A /* Build configuration list for PBXNativeTarget "RobuHub" */;
+			buildPhases = (
+				BCCE74AE2547CF2A0058110A /* Sources */,
+				BCCE74AF2547CF2A0058110A /* Frameworks */,
+				BCCE74B02547CF2A0058110A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RobuHub;
+			productName = RobuHub;
+			productReference = BCCE74B22547CF2A0058110A /* RobuHub.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BCCE74C72547CF2C0058110A /* RobuHubTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCCE74DF2547CF2C0058110A /* Build configuration list for PBXNativeTarget "RobuHubTests" */;
+			buildPhases = (
+				BCCE74C42547CF2C0058110A /* Sources */,
+				BCCE74C52547CF2C0058110A /* Frameworks */,
+				BCCE74C62547CF2C0058110A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCCE74CA2547CF2C0058110A /* PBXTargetDependency */,
+			);
+			name = RobuHubTests;
+			productName = RobuHubTests;
+			productReference = BCCE74C82547CF2C0058110A /* RobuHubTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BCCE74D22547CF2C0058110A /* RobuHubUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCCE74E22547CF2C0058110A /* Build configuration list for PBXNativeTarget "RobuHubUITests" */;
+			buildPhases = (
+				BCCE74CF2547CF2C0058110A /* Sources */,
+				BCCE74D02547CF2C0058110A /* Frameworks */,
+				BCCE74D12547CF2C0058110A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCCE74D52547CF2C0058110A /* PBXTargetDependency */,
+			);
+			name = RobuHubUITests;
+			productName = RobuHubUITests;
+			productReference = BCCE74D32547CF2C0058110A /* RobuHubUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCCE74AA2547CF2A0058110A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					BCCE74B12547CF2A0058110A = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					BCCE74C72547CF2C0058110A = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = BCCE74B12547CF2A0058110A;
+					};
+					BCCE74D22547CF2C0058110A = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = BCCE74B12547CF2A0058110A;
+					};
+				};
+			};
+			buildConfigurationList = BCCE74AD2547CF2A0058110A /* Build configuration list for PBXProject "RobuHub" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BCCE74A92547CF2A0058110A;
+			productRefGroup = BCCE74B32547CF2A0058110A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCCE74B12547CF2A0058110A /* RobuHub */,
+				BCCE74C72547CF2C0058110A /* RobuHubTests */,
+				BCCE74D22547CF2C0058110A /* RobuHubUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCCE74B02547CF2A0058110A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCCE74C22547CF2C0058110A /* LaunchScreen.storyboard in Resources */,
+				BCCE74BF2547CF2C0058110A /* Assets.xcassets in Resources */,
+				BCCE74BD2547CF2A0058110A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCCE74C62547CF2C0058110A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCCE74D12547CF2C0058110A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCCE74AE2547CF2A0058110A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCCE74BA2547CF2A0058110A /* ViewController.swift in Sources */,
+				BCCE74B62547CF2A0058110A /* AppDelegate.swift in Sources */,
+				BCCE74B82547CF2A0058110A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCCE74C42547CF2C0058110A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCCE74CD2547CF2C0058110A /* RobuHubTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCCE74CF2547CF2C0058110A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCCE74D82547CF2C0058110A /* RobuHubUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BCCE74CA2547CF2C0058110A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCCE74B12547CF2A0058110A /* RobuHub */;
+			targetProxy = BCCE74C92547CF2C0058110A /* PBXContainerItemProxy */;
+		};
+		BCCE74D52547CF2C0058110A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCCE74B12547CF2A0058110A /* RobuHub */;
+			targetProxy = BCCE74D42547CF2C0058110A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BCCE74BB2547CF2A0058110A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCCE74BC2547CF2A0058110A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BCCE74C02547CF2C0058110A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCCE74C12547CF2C0058110A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BCCE74DA2547CF2C0058110A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BCCE74DB2547CF2C0058110A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCCE74DD2547CF2C0058110A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FQA9SHB233;
+				INFOPLIST_FILE = RobuHub/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = come.karimebrahem.RobuHub;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BCCE74DE2547CF2C0058110A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FQA9SHB233;
+				INFOPLIST_FILE = RobuHub/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = come.karimebrahem.RobuHub;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BCCE74E02547CF2C0058110A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FQA9SHB233;
+				INFOPLIST_FILE = RobuHubTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = come.karimebrahem.RobuHubTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RobuHub.app/RobuHub";
+			};
+			name = Debug;
+		};
+		BCCE74E12547CF2C0058110A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FQA9SHB233;
+				INFOPLIST_FILE = RobuHubTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = come.karimebrahem.RobuHubTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RobuHub.app/RobuHub";
+			};
+			name = Release;
+		};
+		BCCE74E32547CF2C0058110A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FQA9SHB233;
+				INFOPLIST_FILE = RobuHubUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = come.karimebrahem.RobuHubUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RobuHub;
+			};
+			name = Debug;
+		};
+		BCCE74E42547CF2C0058110A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FQA9SHB233;
+				INFOPLIST_FILE = RobuHubUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = come.karimebrahem.RobuHubUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RobuHub;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCCE74AD2547CF2A0058110A /* Build configuration list for PBXProject "RobuHub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCCE74DA2547CF2C0058110A /* Debug */,
+				BCCE74DB2547CF2C0058110A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCCE74DC2547CF2C0058110A /* Build configuration list for PBXNativeTarget "RobuHub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCCE74DD2547CF2C0058110A /* Debug */,
+				BCCE74DE2547CF2C0058110A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCCE74DF2547CF2C0058110A /* Build configuration list for PBXNativeTarget "RobuHubTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCCE74E02547CF2C0058110A /* Debug */,
+				BCCE74E12547CF2C0058110A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCCE74E22547CF2C0058110A /* Build configuration list for PBXNativeTarget "RobuHubUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCCE74E32547CF2C0058110A /* Debug */,
+				BCCE74E42547CF2C0058110A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BCCE74AA2547CF2A0058110A /* Project object */;
+}
