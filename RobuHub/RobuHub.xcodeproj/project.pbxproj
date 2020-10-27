@@ -49,6 +49,8 @@
 		BCCE765F2547E2B90058110A /* GithubJSONRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCE765E2547E2B90058110A /* GithubJSONRequest.m */; };
 		BCCE76612547E30F0058110A /* RepositoriesRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE76602547E30F0058110A /* RepositoriesRequest.h */; };
 		BCCE76632547E3190058110A /* RepositoriesRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCE76622547E3190058110A /* RepositoriesRequest.m */; };
+		BCCE76652547E34E0058110A /* GithubClient.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCE76642547E34E0058110A /* GithubClient.h */; };
+		BCCE76672547E3610058110A /* GithubClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BCCE76662547E3610058110A /* GithubClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -167,6 +169,8 @@
 		BCCE765E2547E2B90058110A /* GithubJSONRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GithubJSONRequest.m; sourceTree = "<group>"; };
 		BCCE76602547E30F0058110A /* RepositoriesRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RepositoriesRequest.h; sourceTree = "<group>"; };
 		BCCE76622547E3190058110A /* RepositoriesRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RepositoriesRequest.m; sourceTree = "<group>"; };
+		BCCE76642547E34E0058110A /* GithubClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GithubClient.h; sourceTree = "<group>"; };
+		BCCE76662547E3610058110A /* GithubClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GithubClient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -374,6 +378,8 @@
 				BCCE765E2547E2B90058110A /* GithubJSONRequest.m */,
 				BCCE76602547E30F0058110A /* RepositoriesRequest.h */,
 				BCCE76622547E3190058110A /* RepositoriesRequest.m */,
+				BCCE76642547E34E0058110A /* GithubClient.h */,
+				BCCE76662547E3610058110A /* GithubClient.m */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -410,6 +416,7 @@
 				BCCE75C52547D9610058110A /* APIRequest.h in Headers */,
 				BCCE755E2547D4F40058110A /* NetworkPlatform.h in Headers */,
 				BCCE76592547DF0B0058110A /* RepositoriesResponse.h in Headers */,
+				BCCE76652547E34E0058110A /* GithubClient.h in Headers */,
 				BCCE75862547D6E80058110A /* APIResponse.h in Headers */,
 				BCCE765D2547E2B10058110A /* GithubJSONRequest.h in Headers */,
 				BCCE76222547DDAF0058110A /* APIClient.h in Headers */,
@@ -677,6 +684,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCCE76672547E3610058110A /* GithubClient.m in Sources */,
 				BCCE76292547DDB80058110A /* APIClient.m in Sources */,
 				BCCE76632547E3190058110A /* RepositoriesRequest.m in Sources */,
 				BCCE765F2547E2B90058110A /* GithubJSONRequest.m in Sources */,
